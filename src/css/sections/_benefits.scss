@@ -1,0 +1,30 @@
+.s-benefits {
+  margin-top: rem(280);
+  padding-inline: rem(40);
+  @media (max-width: $lg) {
+    margin-top: rem(0);
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: rem(64);
+    column-gap: rem(30);
+    margin-top: rem(60);
+    font-size: rem(18);
+    line-height: rem(29);
+    font-weight: 300;
+    @media (max-width: $lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $md) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    h3 {
+      font-family: $font-base;
+      font-weight: 700;
+      font-size: rem(22);
+      margin-top: rem(10);
+      margin-bottom: rem(12);
+    }
+  }
+}

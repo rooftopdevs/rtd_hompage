@@ -1,0 +1,30 @@
+.c-main-logo {
+    z-index: 25;
+    display: flex;
+    align-items: center;
+    img {
+      display: block;
+      &:nth-child(2) {
+        margin-left: 10px;
+      }
+      @media (max-width: $lg) {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+    &--dark {
+      filter: brightness(0) saturate(100%) invert(0%) sepia(4%) saturate(5603%)
+        hue-rotate(357deg) brightness(111%) contrast(84%);
+    }
+    &__text {
+      font-size: rem(6.5);
+      font-family: $font-base;
+      line-height: 1;
+      margin-left: 8.4px;
+      @media (max-width: $lg) {
+        display: none;
+      }
+    }
+  }
+  

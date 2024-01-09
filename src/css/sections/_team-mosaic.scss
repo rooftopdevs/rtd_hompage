@@ -1,0 +1,30 @@
+.team-mosaic {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 28% 1fr;
+  column-gap: rem(30);
+
+  @media (max-width: $lg) {
+    column-gap: rem(16);
+    display: none;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(30);
+    @media (max-width: $md) {
+      row-gap: rem(16);
+    }
+    &:nth-child(odd) {
+      margin-top: rem(64);
+    }
+  }
+  &__img {
+    &--st2 {
+      margin-left: rem(30);
+    }
+    &--st3 {
+      margin-right: rem(30);
+    }
+  }
+}

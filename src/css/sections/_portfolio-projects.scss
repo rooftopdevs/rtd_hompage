@@ -1,0 +1,14 @@
+.s-ourWork {
+    h2 {
+        padding-left: rem(20);
+        padding-bottom: rem(10);
+        margin-bottom: $padding-40;
+        &.entry {
+            opacity: 0.5 !important;
+        }
+        @media(max-width: $lg) {
+            padding-bottom: 0;
+            margin-bottom: rem(64);
+        }
+    }
+}

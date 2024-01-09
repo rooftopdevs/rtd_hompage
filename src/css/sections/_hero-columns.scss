@@ -1,0 +1,42 @@
+.s-hero__columns {
+  margin-top: rem(160);
+  margin-bottom: rem(100);
+  display: flex;
+  gap: rem(16);
+  @media (max-width: $md) {
+    margin-top: rem(82);
+    margin-bottom: rem(32);
+  }
+  h1 {
+    font-size: rem(72);
+  }
+  &__right {
+    display: flex;
+    @media (max-width: $lg) {
+      align-items: center;
+    }
+  }
+  &__heading {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+  &__arrow {
+    margin-right: rem(17);
+    margin-top: rem(5);
+    flex-shrink: 0;
+    @media (max-width: $lg) {
+      margin-left: -100px;
+    }
+    @media (max-width: $md) {
+      display: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__text {
+    max-width: rem(470);
+    margin-top: rem(5);
+  }
+}

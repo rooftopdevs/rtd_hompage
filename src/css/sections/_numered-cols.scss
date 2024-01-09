@@ -1,0 +1,66 @@
+.s-numered-cols {
+  margin-top: rem(230);
+  @media (max-width: $lg) {
+    margin-top: rem(0);
+  }
+  h2 {
+    padding-top: rem(110);
+    // margin-bottom: rem(104);
+    @media (max-width: $lg) {
+      padding-top: rem(0);
+      margin-bottom: rem(64);
+    }
+  }
+  &__p {
+    margin-bottom: rem(24);
+    font-size: rem(32);
+    font-weight: 100;
+    @media (max-width: $lg) {
+      font-size: rem(18);
+      font-weight: 300;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(25);
+    font-size: rem(18);
+    font-weight: 300;
+    transition: 5s;
+    margin-bottom: calc($padding-312 - 10px);
+
+    @media (max-width: $lg) {
+      grid-template-columns: 1fr;
+      gap: rem(64);
+      margin-bottom: rem(160);
+    }
+    &__element {
+      span {
+        font-size: 18px;
+        opacity: 0.3;
+      }
+      h3 {
+        font-size: rem(22);
+        font-weight: bold;
+        margin-top: rem(10);
+        padding-left: rem(2);
+        font-family: $font-base;
+      }
+      p {
+        margin-top: rem(12);
+      }
+    }
+  }
+}
+
+.tranisition-1 {
+  transition: all 1s !important;
+}
+
+.transition-2 {
+  transition: all 2s !important;
+}
+
+.delay {
+  transition-delay: 0.5s !important;
+}

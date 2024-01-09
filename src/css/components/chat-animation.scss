@@ -1,0 +1,255 @@
+.c-chat-animation {
+    width: 268px;
+    height: 577px;
+    background-color: #030c1a;
+    border-radius: 15px;
+    overflow: hidden;
+    will-change: transform;
+    position: relative;
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    &__bar {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+    }
+    &__chat-space {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 80px;
+      position: relative;
+      animation: chat-scroll 13s 1s infinite;
+  
+      &__person {
+        margin-bottom: rem(10);
+        opacity: 0;
+        transform: translateY(50px);
+        animation: person-show 13s 1s infinite;
+      }
+      &__box {
+        width: 100%;
+        padding-inline: 15px;
+        margin-bottom: rem(8);
+        &--2 {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      &__message {
+        background-color: #121f33;
+        border-radius: 20px;
+        width: 75%;
+        padding: 8px 12px;
+  
+        margin-bottom: rem(2);
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 100;
+        opacity: 0;
+        &--2 {
+          width: auto;
+          opacity: 0;
+          transform: translateY(50px);
+        }
+      }
+    }
+    &__typing {
+      z-index: 5;
+      width: 71px;
+      height: 32px;
+      width: 54px;
+      background-color: #121f33;
+      border-radius: 24px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      position: absolute;
+      bottom: 16px;
+      left: 12px;
+      overflow: hidden;
+      animation: hidden-typing 13s 1s infinite;
+    }
+  }
+  #receive-message {
+    &-first {
+      transform: translateY(50px);
+      animation: show-message 13s 1s infinite;
+    }
+    &-second {
+      transform: translateY(60px);
+      animation: show-message 13s 1s infinite;
+    }
+    &-third {
+      transform: translateY(70px);
+      animation: show-message 13s 1s infinite;
+    }
+    &-fourth {
+      transform: translateY(50px);
+      animation: show-message2 13s 1s infinite;
+    }
+    &-fifth {
+      transform: translateY(50px);
+      animation: show-message2 13s 1s infinite;
+    }
+  }
+  #send-message {
+    &-first {
+      animation: send-message 13s 1s infinite;
+    }
+    &-second {
+      animation: send-message2 13s 1s infinite;
+    }
+  }
+  
+  //dla infinite
+  @keyframes person-show {
+    0% {
+      opacity: 0;
+    }
+    7.7% {
+      opacity: 0;
+    }
+    15.4% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes show-message {
+    0% {
+      opacity: 0;
+      transform: translateY(70px);
+    }
+    23.1% {
+      opacity: 0;
+      transform: translateY(70px);
+    }
+    30.5% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes show-message2 {
+    0% {
+      opacity: 0;
+      transform: translateY(70px);
+    }
+    59.2% {
+      opacity: 0;
+      transform: translateY(70px);
+    }
+    66.6% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes send-message {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+      background-color: #121f33;
+    }
+    37.8% {
+      opacity: 0;
+      transform: translateY(50px);
+      background-color: #121f33;
+    }
+    42.3% {
+      opacity: 1;
+      transform: translateY(30px);
+      background-color: #121f33;
+    }
+    51.3% {
+      opacity: 1;
+      transform: translateY(30px);
+      background-color: #121f33;
+    }
+    55.5% {
+      transform: translateY(0);
+      background-color: #1d74f5;
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      background-color: #1d74f5;
+      opacity: 1;
+    }
+  }
+  @keyframes send-message2 {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    74% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    85.5% {
+      opacity: 1;
+      transform: translateY(0);
+      background-color: #121f33;
+    }
+    91.76% {
+      opacity: 1;
+      transform: translateY(0);
+      background-color: #121f33;
+    }
+    96.2% {
+      transform: translateY(0);
+      background-color: #1d74f5;
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      background-color: #1d74f5;
+      opacity: 1;
+    }
+  }
+  @keyframes hidden-typing {
+    0% {
+      opacity: 1;
+    }
+    29.6% {
+      opacity: 1;
+    }
+    33.3% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes chat-scroll {
+    0% {
+      transform: translateY(0);
+    }
+    66.6% {
+      transform: translateY(0);
+    }
+    74% {
+      transform: translateY(-170px);
+    }
+    100% {
+      transform: translateY(-170px);
+    }
+  }
+  

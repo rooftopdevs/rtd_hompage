@@ -1,0 +1,86 @@
+.visible {
+    display: block !important;
+  }
+  
+  .nav__full {
+    transform: translateX(0);
+  }
+  
+  .nav__small {
+    width: 100%;
+    max-width: none;
+    transition: 2s;
+    animation: nav__small 2s forwards;
+    @media (max-width: $lg) {
+      animation: none;
+    }
+  }
+  
+  .overflow {
+    overflow: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .opacity {
+    opacity: 0;
+    animation: opacityAn 0.6s;
+    animation-fill-mode: forwards;
+  }
+  
+  .opacityReverse {
+    opacity: 1;
+    animation: opacityAnRev 1s 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  .transforming {
+    transform: translateX(100%);
+  }
+  
+  .color-black {
+    color: $color-1;
+    transition: 0.15s;
+  }
+  
+  .border-black {
+    border-color: $color-1;
+    transition: 0.15s;
+    color: $color-1;
+    &:hover {
+      background-color: transparent;
+    }
+    &--reverse {
+      border-color: $color-1;
+      transition: 0.15s;
+      color: $color-1;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+  
+  .background-black {
+    background-color: $color-1;
+    transition: 0.15s;
+    &:before,
+    &:after {
+      background-color: $color-1;
+    }
+  }
+  
+  .headerBackground {
+    background-color: $background;
+    transition: 0.5s;
+  }
+  
+  .transformation-mobile {
+    transition: 1.4s;
+    @media (max-width: $lg) {
+      transform: translate(0) !important;
+      left: 0;
+    }
+  }
+  

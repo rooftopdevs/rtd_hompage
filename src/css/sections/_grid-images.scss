@@ -1,0 +1,432 @@
+.s-grid-images {
+	margin-bottom: rem(27);
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		gap: 0 rem(36);
+		padding-bottom: 167px;
+
+		@media (max-width: 767px) {
+			padding: 0px 30px;
+		}
+
+		@media (min-width: $md) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	&__col {
+		&--first {
+
+			order: 2;
+
+			@media (min-width: $md) {
+				order: 1;
+				width: 66%;
+			}
+
+			.s-grid-images__item {
+				position: relative;
+				z-index: 0;
+			}
+		}
+
+		&--second {
+
+			display: flex;
+			gap: rem(16);
+			order: 1;
+			justify-content: center;
+			width: 100%;
+			margin-bottom: -50px;
+			z-index: 2;
+
+			@media (min-width: $md) {
+				justify-content: flex-start;
+				padding-top: rem(7);
+				width: 31%;
+				order: 2;
+			}
+		}
+	}
+
+	&__item {
+		&--abs {
+			position: relative;
+
+			@media (min-width: $md) {
+				position: absolute;
+			}
+
+			&-1 {
+				order: 3;
+				width: auto;
+				left: -17px;
+				margin-top: -56px;
+
+				@media (min-width: $sm) {
+					right: -15px;
+				}
+
+				@media (min-width: $md) {
+					bottom: 68px;
+					left: -12px;
+					width: 55%;
+				}
+
+				@media (min-width: $lg) {
+					bottom: 16px;
+					left: 10px;
+				}
+
+				@media (min-width: 1400px) {
+					left: -65px;
+					bottom: -7px;
+					width: auto;
+				}
+
+			}
+
+			&-2 {
+				order: 3;
+				margin: auto;
+				margin-right: 0;
+				margin-top: -22px;
+				right: -15px;
+
+
+				@media (min-width: $sm) {
+					margin-top: -85px;
+				}
+
+				@media (min-width: $md) {
+					bottom: 35px;
+					right: 26px;
+					width: 48%;
+				}
+
+				@media (min-width: $lg) {
+					right: 15px;
+					bottom: 76px;
+					width: 50%;
+				}
+
+				@media (min-width: 1400px) {
+					right: -16px;
+				}
+
+			}
+		}
+	}
+
+	&__vectors {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		width: 100%;
+		height: 74%;
+		opacity: 0;
+
+		&--svg {
+			width: 8%;
+			transition: transform 0.3s ease-in-out;
+
+			&:nth-child(1) {
+				position: absolute;
+				top: 30%;
+				left: 50%;
+				transform: translateX(-50%);
+				transform: translateY(50px);
+			}
+
+			&:nth-child(2) {
+				position: absolute;
+				top: 44%;
+				left: 35%;
+				transform: translateY(50px);
+			}
+
+			&:nth-child(3) {
+				position: absolute;
+				top: 52%;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			&:nth-child(4) {
+				position: absolute;
+				top: 44%;
+				right: 35%;
+				transform: translateY(50px);
+			}
+		}
+
+	}
+
+	&__animation {
+		aspect-ratio: 1440/940;
+		background-color: #FFC72C;
+		border-radius: 12px;
+		overflow: hidden;
+		position: relative;
+
+		.s-grid-images__menu {
+			opacity: 0;
+			transform: translateY(-19px);
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 2;
+		}
+
+	}
+
+	&__video {
+		position: relative;
+		opacity: 0;
+		z-index: 1;
+		aspect-ratio: 771/369;
+		overflow: hidden;
+		margin-top: -5px;
+
+		&::after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			background-color: #00000057;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+		}
+
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		&--elements {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+
+		&--content {
+			width: 38%;
+			position: absolute;
+			bottom: 17%;
+			left: 10%;
+			z-index: 1;
+		}
+
+		&--svg {
+			width: 3%;
+			position: absolute;
+
+			&:nth-of-type(1) {
+				top: 4%;
+				left: 2%;
+			}
+
+			&:nth-of-type(2) {
+				position: absolute;
+				top: 91%;
+				left: 2%;
+			}
+
+			&:nth-of-type(3) {
+				position: absolute;
+				top: 5%;
+				right: 2%;
+			}
+
+			&:nth-of-type(4) {
+				position: absolute;
+				top: 91%;
+				right: 2%;
+			}
+		}
+	}
+
+	&--animate .s-grid-images__menu{
+		animation: gridImagesAnimationMenu 2s ease forwards;
+		animation-delay: 2s;
+	}
+
+	&--animate &__animation {
+		animation: changeBgColorAnimation 2s ease forwards;
+	}
+
+	&--animate &__video{
+		animation: visibleAnimation 1s ease forwards;
+		animation-delay: 3.5s;
+	}
+
+	&--animate {
+		.s-grid-images__vectors {
+			animation: visibleAndMoveAnimation 0.8s ease forwards;
+
+			&--svg {
+				&:nth-child(1) {
+					animation: moveElementSvgAnimation1 1.5s ease forwards;
+					animation-delay: 1s;
+					transform: translate(-50%, 0px);
+
+				}
+
+				&:nth-child(2) {
+					animation: moveElementSvgAnimation2 1.5s ease forwards;
+					animation-delay: 1s;
+					transform: translateY(0px);
+				}
+
+				&:nth-child(3) {
+					animation: moveElementSvgAnimation3 1.5s ease forwards;
+					animation-delay: 1s;
+				}
+
+				&:nth-child(4) {
+					animation: moveElementSvgAnimation4 1.5s ease forwards;
+					animation-delay: 1s;
+					transform: translateY(0px);
+				}
+			}
+		}
+
+	}
+}
+
+@keyframes visibleAnimation {
+	0% {
+		opacity: 0;
+
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes visibleAndMoveAnimation {
+	0% {
+		opacity: 0;
+		top: calc(60%);
+	}
+	100% {
+		opacity: 1;
+		top: 50%;
+	}
+}
+
+@keyframes changeBgColorAnimation {
+	0% {
+		background-color: #FFC72C;
+	}
+
+	20% {
+		background-color: #7AA4BA;
+	}
+
+	80% {
+		background-color: #7AA4BA;
+	}
+
+	100% {
+		background-color: #FFC72C;
+	}
+}
+
+@keyframes moveElementSvgAnimation1 {
+	0% {}
+
+	60% {
+		width: 3%;
+		top: 2%;
+		left: 1%;
+		transform: translateX(0);
+	}
+
+	100% {
+		top: 5%;
+		left: 2%;
+		width: 3%;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveElementSvgAnimation2 {
+	0% {}
+
+	60% {
+		top: 98%;
+		left: 1%;
+		width: 3%;
+	}
+
+	100% {
+		top: 95%;
+		left: 2%;
+		width: 3%;
+	}
+}
+
+@keyframes moveElementSvgAnimation3 {
+	0% {}
+
+	60% {
+		top: 98%;
+		left: 96%;
+		width: 3%;
+		transform: translateX(0);
+	}
+
+	100% {
+		top: 95%;
+		left: 95%;
+		width: 3%;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveElementSvgAnimation4 {
+	0% {}
+
+	60% {
+		top: 2%;
+		right: 1%;
+		width: 3%;
+	}
+
+	100% {
+		top: 5%;
+		right: 2%;
+		width: 3%;
+	}
+}
+
+@keyframes gridImagesAnimationMenu {
+	0% {}
+
+	60% {
+		opacity: 1;
+		transform: translateY(-19px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.s-hero__sub+.s-grid-images {
+	margin-top: -28px;
+}

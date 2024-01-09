@@ -1,0 +1,66 @@
+.project {
+  &__mobiles {
+    margin-inline: auto;
+    padding-top: rem(90);
+    padding-bottom: rem(160);
+    margin-bottom: rem(200);
+    padding: 0 rem($container-padding);
+    position: relative;
+    @media (max-width: $lg) {
+      padding-inline: rem(16);
+      margin-bottom: rem(160);
+    }
+    &--img {
+      img {
+        width: 100%;
+      }
+    }
+    &__rating {
+      font-weight: 100;
+      padding-left: rem(30);
+      margin-top: rem(148);
+
+      .uncommon__mobiles & {
+        padding-left: 0;
+      }
+
+      .nesquik__mobiles & {
+        padding: 0;
+      }
+
+      .texaco__mobiles & {
+        margin-top: rem(198);
+
+        @media (max-width: $lg) {
+          margin-top: rem(96);
+        }
+      }
+
+      @media (max-width: $lg) {
+        padding-left: 0;
+        margin-top: rem(96);
+        padding-inline: rem(16);
+      }
+
+      @media (max-width: $sm) {
+        padding: 0;
+        .suzuki__project__mobiles & {
+          padding-inline: rem(16) !important;
+        }
+
+        .nesquik__mobiles & {
+          margin: 0 rem(-16);
+        }
+      }
+    }
+    &--no-background {
+      padding-top: rem(168);
+      padding-bottom: rem(200);
+      margin-bottom: 0;
+      @media (max-width: $lg) {
+        padding-top: rem(96);
+        padding-bottom: rem(96);
+      }
+    }
+  }
+}

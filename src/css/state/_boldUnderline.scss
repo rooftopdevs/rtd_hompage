@@ -1,0 +1,21 @@
+.st-boldUnderline {
+    display: inline;
+    font-weight: bold;
+    position: relative;
+    color: white;
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 2s;
+}
+
+.st-boldGradient {
+    display: inline;
+    font-weight: bold;
+    background: $gradient-1;
+    position: relative;
+    background: #F39D9E;
+    background: linear-gradient(to right, #F39D9E 0%, #D11452 50%, #7C1436 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,40 @@
+.st-scaleHeading {
+    font-size: rem(180);
+    @media (max-width: $xl) {
+      font-size: rem(120);
+    }
+    @media (max-width: $md) {
+      font-size: rem(70);
+    }
+    @media (max-width: 600px) {
+      font-size: rem(120);
+      white-space: nowrap;
+      display: inline-block;
+    }
+  }
+  
+  .st-scaleHeading--medium {
+    font-size: rem(120);
+    @media (max-width: $xl) {
+      font-size: rem(90);
+    }
+    @media (max-width: $md) {
+      font-size: rem(48);
+      word-wrap: break-word;
+    }
+  }
+  
+  .st-scaleHeading--normal {
+    font-size: rem(72);
+    list-style: none;
+    line-height: 1.2;
+    letter-spacing: rem(-0.9);
+    @media (max-width: $xl) {
+      font-size: rem(50);
+    }
+    @media (max-width: $md) {
+      font-size: rem(32);
+      word-wrap: break-word;
+    }
+  }
+  

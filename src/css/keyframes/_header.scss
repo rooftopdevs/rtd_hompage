@@ -1,0 +1,43 @@
+@keyframes headerOpen {
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes nav__full {
+    from {
+      width: rem(535);
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes nav__small {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 535px;
+    }
+  }
+  
+  @keyframes opacityAn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes opacityAnRev {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

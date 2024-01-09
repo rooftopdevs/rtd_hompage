@@ -1,0 +1,15 @@
+.mosaic-slide {
+    width: 100%;
+    height: 30vw;
+    @media (max-width: $lg) {
+        height: 40vw;
+    }
+    &:nth-child(2n + 1) {
+        margin-top: 0;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

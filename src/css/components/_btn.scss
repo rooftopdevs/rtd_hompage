@@ -1,0 +1,118 @@
+.c-btn {
+    padding: rem(8) rem(20) rem(12) rem(20);
+    font-size: rem(16);
+    font-weight: 700;
+    border: 2px solid $text-color-base;
+    border-radius: rem(26);
+    transition: color $transition-speed, background $transition-speed, width $transition-speed;
+    position: relative;
+    &.margins {
+      margin: rem(30) 0 rem(100);
+      display: inline-block;
+    }
+    @media (max-width: $xs) {
+      font-size: 16px;
+    }
+    &:hover {
+      color: $color-1;
+      background: #fff;
+    }
+    &--fill {
+      @extend .c-btn;
+      color: $color-1;
+      background: #fff;
+      max-width: 220px;
+      svg {
+        margin-top: rem(-4);
+        margin-right: rem(16);
+      }
+      &:hover {
+        background: #ed1442;
+        border-color: #ed1442;
+        color: #fff;
+        svg path {
+          fill: #fff;
+        }
+      }
+      transition: 0.2s;
+    }
+    &--dark {
+      border-color: #000;
+      color: #000;
+      &:hover {
+        border-color: #fff;
+      }
+    }
+    &--nmw {
+      max-width: none;
+    }
+  }
+  
+  .arrow {
+    width: 15px;
+    height: 3px;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    margin-left: 16px;
+    transition: 0.3s;
+    transform: translateY(-3px);
+    &:before,
+    &::after {
+      content: "";
+      transition: 0.2s;
+      position: absolute;
+      width: 10px;
+      height: 3px;
+      background-color: white;
+    }
+    &:before {
+      right: -1px;
+      top: -3px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+      bottom: -3px;
+      right: -1px;
+    }
+  }
+  
+  .arrowDark {
+    background-color: #000;
+    &:before,
+    &:after {
+      background-color: #000;
+    }
+  }
+  
+  .long {
+    background-color: black;
+    width: 25px;
+    transition: 0.3s;
+    &:before,
+    &:after {
+      background-color: black;
+    }
+  }
+  
+  .long--white {
+    @extend .long;
+    background-color: #fff;
+    &:before,
+    &:after {
+      background-color: #fff;
+    }
+  }
+  
+  .revColors,
+  .active {
+    color: #000;
+    background-color: #fff;
+  }
+  
+  .longDark {
+    width: 25px;
+    transition: 0.3s;
+  }
+  

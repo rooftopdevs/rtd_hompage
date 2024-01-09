@@ -1,0 +1,297 @@
+.c-projectBox {
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    height: 585px;
+    overflow: hidden;
+    margin-right: 100px;
+    padding-left: rem(100);
+    position: relative;
+    margin-bottom: rem(64);
+    transition: 2s;
+    &:last-child {
+      margin-bottom: rem(0);
+    }
+    @media (max-width: $lg) {
+      margin-bottom: rem(96);
+      padding-left: rem(0);
+      height: 640px;
+      flex-direction: column;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background-size: cover;
+    }
+    &__item {
+      // margin-bottom: rem(64);
+  
+      // @media (max-width: $lg) {
+      //   margin-bottom: rem(96);
+      // }
+  
+      &.hide {
+        display: none;
+      }
+    }
+    &__heading {
+      width: 45%;
+      margin-top: rem(145);
+      z-index: 10;
+      margin-right: rem(30);
+      position: relative;
+      @media (max-width: $lg) {
+        width: 100%;
+        margin-top: rem(32);
+        padding-inline: rem(25);
+      }
+      h3 {
+        font-size: rem(48);
+        margin-bottom: rem(12);
+        padding-bottom: 0;
+        line-height: rem(56);
+        @media (max-width: $lg) {
+          font-size: rem(32);
+          line-height: rem(40);
+          margin-bottom: rem(9);
+          font-family: $font-base;
+        }
+      }
+      p {
+        padding-top: 0;
+        margin-top: 0;
+        font-size: rem(18);
+        padding-bottom: rem(8);
+        margin-bottom: rem(32);
+      }
+      &__logo {
+        margin-bottom: rem(16);
+        padding-bottom: rem(8);
+  
+        @media (max-width: $lg) {
+          margin-bottom: rem(10);
+        }
+      }
+    }
+    &__img {
+      z-index: 2;
+      margin-top: rem(16);
+      @media (max-width: $lg) {
+        margin-inline: auto;
+      }
+    }
+  }
+  
+  .nesquik {
+    background-size: cover;
+    background-image: url("../img/nesquik-hero-bg.png");
+    @supports (background-image: url("../img/nesquik-hero-bg.webp")) {
+      background-image: url("../img/nesquik-hero-bg.webp");
+    }
+  
+    .c-projectBox {
+      position: relative;
+  
+      &__heading {
+        margin-right: rem(220);
+      }
+      &__img {
+        margin-top: rem(50);
+  
+        &__bg {
+          position: absolute;
+          top: 0;
+          left: 54%;
+          z-index: -1;
+          @media (max-width: $lg) {
+            display: none;
+          }
+        }
+      }
+    }
+    &:before {
+      width: 100px;
+      height: 130px;
+      position: absolute;
+      top: 80%;
+      left: 0;
+      background-image: url("../img/nesquik-hero-hand.png");
+      @supports (background-image: url("../img/nesquik-hero-hand.webp")) {
+        background-image: url("../img/nesquik-hero-hand.webp");
+      }
+      @media (max-width: $md) {
+        display: none;
+      }
+    }
+  }
+  
+  .papa-johns {
+    background-image: url("../img/papa-johns-bg.svg");
+    background-size: cover;
+  
+    .c-projectBox {
+      position: relative;
+  
+      &__heading {
+        margin-right: rem(220);
+      }
+      &__img {
+        margin-top: rem(50);
+  
+        &__bg {
+          position: absolute;
+          top: 0;
+          left: 54%;
+          z-index: -1;
+          @media (max-width: $lg) {
+            display: none;
+          }
+        }
+      }
+    }
+    /*&:before {
+      width: 100px;
+      height: 130px;
+      background-image: url("../img/nesquik-hero-hand.png");
+      position: absolute;
+      top: 80%;
+      left: 0;
+      @media (max-width: $md) {
+        display: none;
+      }
+    }*/
+  }
+  
+  .hp {
+    background-color: $hp-background;
+    &:before {
+      background-image: url("../img/hp-bg.svg");
+      @media (max-width: $lg) {
+        background-image: url("../img/hp-component-bg-mobiles.svg");
+      }
+    }
+    .c-projectBox {
+      &__heading {
+        margin-top: rem(110);
+        @media (max-width: $lg) {
+          margin-top: rem(33);
+        }
+      }
+    }
+    .c-projectBox__img {
+      margin-top: rem(32);
+      margin-left: rem(-30);
+      @media (max-width: $lg) {
+        display: none;
+      }
+      &--mobile {
+        z-index: 2;
+        width: 100%;
+        min-width: 500px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        display: none;
+        position: absolute;
+        bottom: -120px;
+        left: 50%;
+        transform: translateX(-31%);
+        @media (max-width: $lg) {
+          display: flex;
+          pointer-events: none;
+        }
+  
+        &--2 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: -1;
+  
+          @media (max-width: $md) {
+            img {
+              max-width: none;
+            }
+          }
+        }
+      }
+    }
+    .c-projectBox__img2 {
+      position: absolute;
+      right: -20%;
+      bottom: -26%;
+      z-index: 1;
+  
+      @media (max-width: $lg) {
+        display: none;
+        bottom: -30%;
+        right: -10%;
+      }
+      @media (max-width: $md) {
+        bottom: -21%;
+        right: -24%;
+      }
+    }
+    &__heading2 {
+      h3 {
+        width: 60%;
+        @media (max-width: $xl) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  .coca-cola {
+    background-color: $cocacola-background;
+    position: relative;
+    &:before {
+      background-image: url("../img/coca-cola-bg.svg");
+    }
+    &:after {
+      content: "";
+      z-index: 2;
+      position: absolute;
+      width: 758px;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/coca-cola-bubbles.svg");
+    }
+    &__projectBox__heading {
+      z-index: 3;
+      h3 {
+        width: 90%;
+        @media (max-width: $lg) {
+          width: 100%;
+        }
+      }
+    }
+    &__img {
+      z-index: 2;
+      position: absolute;
+      bottom: 0;
+      right: rem(40);
+      @media (max-width: $xl) {
+        width: 55%;
+      }
+      @media (max-width: $lg) {
+        right: 50%;
+        transform: translateX(50%);
+        width: 70%;
+      }
+      @media (max-width: $sm) {
+        max-width: 400px;
+        width: 110%;
+        img {
+          max-width: 330px;
+          margin-left: rem(30);
+        }
+      }
+    }
+  }
+  

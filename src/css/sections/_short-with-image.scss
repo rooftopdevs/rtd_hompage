@@ -1,0 +1,15 @@
+.short-with-image {
+    &__img {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__text {
+        max-width: rem(970);
+        line-height: 1.6;
+        font-weight: 100;
+    }
+    &__heading {
+        color: #fdf8f8;
+        margin-bottom: rem(32);
+    }
+}

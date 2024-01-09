@@ -1,0 +1,71 @@
+//papajohnes screen1 animation
+@keyframes screenScroll1 {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(0);
+    }
+    35% {
+      transform: translateY(-30%);
+    }
+    60% {
+      transform: translateY(-30%);
+    }
+    65% {
+      transform: translateY(-46%);
+    }
+    90% {
+      transform: translateY(-46%);
+    }
+    95% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes dpd1 {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-22%);
+    }
+    60% {
+      transform: translateY(-25%);
+    }
+    90% {
+      transform: translateY(-25%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  //papajohnes screen2 animation
+  @keyframes screenScroll2 {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(0);
+    }
+    35% {
+      transform: translateY(-37.5%);
+    }
+    60% {
+      transform: translateY(-37.5%);
+    }
+    65% {
+      transform: translateY(-10%);
+    }
+    90% {
+      transform: translateY(-10%);
+    }
+    95% {
+      transform: translateY(0);
+    }
+  }
+  

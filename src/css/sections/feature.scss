@@ -1,0 +1,45 @@
+.s-feature {
+  position: relative;
+  display: none;
+  width: 150%;
+  @media (max-width: $lg) {
+    display: block;
+  }
+  /**
+   * Sliding text.
+   */
+  .swiper-wrapper {
+    transition-timing-function: linear; // Continuous looping linear moving slider.
+  }
+  // Slide.
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    box-shadow: none;
+    img {
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+}
+.heading-hidden {
+  @media (max-width: $lg) {
+    display: none;
+  }
+}
+.big-margin {
+  margin-top: rem(280);
+}
+
+.mb-88 {
+  margin-bottom: rem(88);
+}
+
+.mt-160 {
+  margin-top: rem(160);
+}
+.mb-30 {
+  margin-bottom: rem(30);
+}

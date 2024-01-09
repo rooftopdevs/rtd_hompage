@@ -1,0 +1,99 @@
+@keyframes hp-slide1 {
+    0% {
+      opacity: 1;
+    }
+    16% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 0;
+    }
+    96% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes hp-slide2 {
+    0% {
+      opacity: 0;
+    }
+    16% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    36% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes hp-slide3 {
+    0% {
+      opacity: 0;
+    }
+    36% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    56% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes hp-slide4 {
+    0% {
+      opacity: 0;
+    }
+    56% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+    }
+    76% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes hp-slide5 {
+    0% {
+      opacity: 0;
+    }
+    76% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    96% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

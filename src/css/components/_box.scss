@@ -1,0 +1,28 @@
+.c-box {
+    max-width: rem(590);
+    padding-inline: rem(15);
+    letter-spacing: 0;
+    font-size: rem(18);
+    &__menu {
+      @media (max-width: $lg) {
+        display: none;
+      }
+    }
+    span {
+      font-weight: 700;
+      font-size: rem(16);
+    }
+    h2 {
+      margin-top: rem(10);
+      font-size: rem(48);
+      margin-bottom: rem(15);
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+  .send-success {
+    display: none;
+    margin-bottom: 0;
+  }
+  

@@ -1,0 +1,80 @@
+:root {
+    //Variable for Responsive Hero section animantion
+    --doneText: 560px;
+    --imposibleTextMargin: -235px;
+    --imposibleTextFontSize: 120px;
+    --imposibleTextMarginTop: calc(100vh - 462px);
+    --imposibleTextMarginBottom: 0px;
+    --spanMarginLeft: 130px;
+    --svgSize: 1;
+    --doneTransform: -90px;
+    --heroArrowLeft: -232px;
+    --heroArrowTop: 140px;
+    --arrowTransform: 150px;
+    --mWidth: 1440px;
+    @media (max-width: $xxl) {
+        --doneText: 450px;
+        --imposibleTextMargin: -150px;
+        --imposibleTextFontSize: 96px;
+        --imposibleTextMarginTop: calc(100vh - 395px);
+        --imposibleTextMarginBottom: 40px;
+        --spanMarginLeft: 110px;
+        --doneTransform: -100px;
+        --heroArrowLeft: -193.5px;
+        --heroArrowTop: 103px;
+        --svgSize: 0.8;
+        --arrowTransform: 140px;
+        --mWidth: 1200px;
+    }
+    @media (max-width: $xl) {
+        --doneText: 360px;
+        --imposibleX: 30%;
+        --imposibleTextFontSize: 77px;
+        --imposibleTextMarginTop: calc(100vh - 305px);
+        --imposibleTextMarginBottom: 60px;
+        --spanMarginLeft: 90px;
+        --doneTransform: -130px;
+        --svgSize: 0.6;
+        --heroArrowTop: 80px;
+        --heroArrowLeft: -161px;
+        --imposibleTextMargin: -140px;
+        --arrowTransform: 95px;
+        --mWidth: 1000px;
+    }
+    @media (max-width: $lg) {
+        --doneText: 280px;
+        --imposibleTextMargin: -10%;
+        --imposibleTextFontSize: 70px;
+        --imposibleTextMarginTop: calc(100vh - 230px);
+        --imposibleTextMarginBottom: 70px;
+        --imposibleTextMargin: -70px;
+        --spanMarginLeft: 75px;
+        --doneTranslate: 70px;
+        --doneTransform: -130px;
+        --svgSize: 0.7;
+        --heroArrowLeft: -120px;
+        --arrowTransform: 60px;
+        --heroArrowTop: 65px;
+        --mWidth: 750px;
+    }
+    @media (max-width: $md) {
+        --doneText: 220px;
+        --imposibleTextMargin: -5%;
+        --imposibleTextFontSize: 70px;
+        --imposibleTextMarginTop: 350px;
+        --imposibleTextMarginBottom: 100px;
+        --heroArrowTop: 65px;
+        --heroArrowLeft: -120px;
+        --spanMarginLeft: 80px;
+        --arrowTransform: 50px;
+        --svgSize: 0.6;
+        --imposibleTextMargin: 0px;
+        --mWidth: 550px;
+    }
+    @media (max-width: $xs) {
+        --imposibleTextFontSize: 60px;
+        --svgSize: 0.5;
+        --heroArrowTop: 45px;
+        --heroArrowLeft: -90px;
+    }
+}

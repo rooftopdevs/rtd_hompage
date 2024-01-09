@@ -1,0 +1,162 @@
+.st-boldArrow {
+    font-family: $font-secondary;
+    line-height: rem(57);
+    transition: padding-left 0.32s ease-in-out;
+    display: flex;
+    position: relative;
+  
+    @media (max-width: $lg) {
+      font-size: (32);
+      line-height: initial;
+    }
+  
+    &::before {
+      content: "";
+      background: url(../img/listArrow.svg) no-repeat center;
+      background-size: contain;
+      min-width: 40px;
+      display: block;
+      height: 50px;
+      margin-right: rem(10);
+      opacity: 0;
+      transition: opacity 0.25s ease 0.1s;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      left: 0;
+  
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  
+    &:hover {
+      padding-left: rem(48);
+      &:before {
+        display: block;
+        opacity: 1;
+      }
+    }
+  
+    &--capabilites {
+      &:hover {
+        &:before {
+          display: inline-block;
+          @media (max-width: $lg) {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    &--big {
+      letter-spacing: -0.9px;
+      line-height: 120%;
+  
+      @media (max-width: $lg) {
+        letter-spacing: initial;
+      }
+  
+      &:before {
+        content: "";
+        height: 50px;
+        min-width: 50px;
+        top: rem(10);
+  
+        .c-header & {
+          top: calc(50% - 6px);
+          transform: translateY(-50%);
+        }
+  
+        @media (max-width: 1199px) {
+          min-width: rem(40);
+          height: rem(40);
+        }
+  
+        @media (max-width: $lg) {
+          min-width: 24px;
+          height: 24px;
+          transform: translateY(0);
+          top: rem(4);
+        }
+      }
+      &:hover {
+        padding-left: rem(55);
+  
+        @media (max-width: $lg) {
+          padding-left: rem(32);
+        }
+      }
+    }
+    &--small {
+      font-weight: 300;
+      font-family: $font-base;
+      line-height: normal;
+      font-size: rem(18);
+  
+      @media (max-width: $lg) {
+        padding-left: rem(21);
+      }
+  
+      &:before {
+        content: "";
+        height: 16px;
+        min-width: 16px;
+        top: rem(15);
+        background: url(../img/fillSmallArrow.svg) no-repeat center;
+        @media (max-width: $lg) {
+          display: inline-block;
+          opacity: 1;
+          width: 16px;
+        }
+      }
+      &:hover {
+        padding-left: rem(21);
+        &:before {
+          @media (max-width: $lg) {
+            width: 16px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    &--provideBlock {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding-left: 21px;
+  
+      &:before {
+        content: "";
+        height: 16px;
+        background: url(../img/fillSmallArrow.svg) no-repeat center;
+  
+        transition: 0.2s;
+        display: inline-block;
+        width: 16px;
+        margin-right: rem(16);
+        opacity: 1;
+      }
+      &:hover {
+        padding-left: rem(21);
+      }
+    }
+    &--focus {
+      padding-left: rem(50);
+      &:before {
+        content: "";
+        background: url(../img/listArrow.svg) no-repeat center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        transition: 0.2s;
+        display: inline-block;
+        @media (max-width: $lg) {
+          display: none;
+        }
+      }
+      &:hover {
+        padding-left: rem(50);
+      }
+    }
+  }
+  

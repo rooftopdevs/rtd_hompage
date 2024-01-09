@@ -1,0 +1,110 @@
+.hero-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background: url("../img/hero-bg@2x.jpg") no-repeat 50% / cover;
+    @supports (background-image: url("../img/hero-bg.webp")) {
+      background-image: url("../img/hero-bg.webp");
+    }
+
+    @media (max-width: $md) {
+        min-height: rem(568);
+        height: 100vh;
+        background-image: url("../img/hero-bg.jpg");
+        @supports (background-image: url("../img/hero-bg.webp")) {
+          background-image: url("../img/hero-bg.webp");
+        }
+    }
+    &__radius {
+        border-radius: 0 0 64 64;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10%;
+        background: url("../img/transinformation.png") no-repeat 50% / cover;
+        @supports (background-image: url("../img/transinformation.webp")) {
+          background-image: url("../img/transinformation.webp");
+        }
+        @media (max-width: $md) {
+            padding-left: 30px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    &__container {
+        position: relative;
+        top: 10vh;
+    }
+
+    h3 {
+        margin-bottom: rem(-30);
+        padding-right: rem(70);
+        font-family: $font-base;
+        font-size: rem(15);
+        font-weight: 500;
+        text-align: right;
+
+        @media (max-width: $lg) {
+            margin-bottom: rem(10);
+            padding-right: 0;
+            text-align: center;
+        }
+
+        @media (max-width: $xs) {
+            font-size: 14px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 10vh;
+        font-size: rem(230);
+        line-height: 1;
+        -webkit-text-stroke: 1.5px #e8194b;
+        -webkit-text-fill-color: transparent;
+
+        @media (max-width: $xl) {
+            font-size: rem(195);
+        }
+
+        @media (max-width: $lg) {
+            font-size: rem(140);
+        }
+
+        @media (max-width: $md) {
+            font-size: calc(58px + 52 * ((100vw - 320px) / 447));
+        }
+    }
+
+    h1 {
+        margin-bottom: rem(31);
+        font-size: rem(61);
+        letter-spacing: rem(-1);
+
+        @media (max-width: $md) {
+            font-size: rem(45);
+        }
+    }
+    &__text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        color: #000;
+        &__span {
+            font-family: $font-secondary;
+            font-size: rem(72);
+            margin-top: -50px;
+            @media (max-width: $md) {
+                font-size: rem(45);
+            }
+        }
+        h1 {
+            font-size: rem(72);
+            margin-top: 20px;
+            @media (max-width: $md) {
+                font-size: rem(45);
+            }
+        }
+    }
+}

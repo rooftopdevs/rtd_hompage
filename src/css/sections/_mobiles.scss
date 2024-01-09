@@ -1,0 +1,229 @@
+.s-mobiles {
+  margin-top: rem(168);
+  overflow: hidden;
+  @media (max-width: $lg) {
+    margin-block: rem(50);
+  }
+  &--hp {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-top: rem(114);
+    margin-bottom: rem(200);
+    @media (max-width: $lg) {
+      margin-bottom: rem(200);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+    &__map {
+      @media (max-width: $lg) {
+        display: none;
+      }
+    }
+    &__screen {
+      position: absolute;
+
+      @media (max-width: $lg) {
+        position: static;
+        width: 100%;
+      }
+      &--1 {
+        top: 2%;
+        left: -12.5%;
+        width: 22%;
+        @media (max-width: $lg) {
+          width: 100%;
+        }
+      }
+      &--2 {
+        top: 11.5%;
+        left: 9%;
+        width: 22%;
+        @media (max-width: $lg) {
+          width: 100%;
+          margin-top: 50%;
+        }
+      }
+      &--3 {
+        top: 5%;
+        left: 40.5%;
+        width: 21%;
+
+        @media (max-width: $lg) {
+          position: relative;
+          top: auto;
+          left: auto;
+          width: 90%;
+          z-index: 50;
+          display: flex;
+
+          align-items: center;
+          margin-top: -48%;
+        }
+        &__sl {
+          position: absolute;
+          top: 0;
+          left: auto;
+          right: auto;
+          animation-iteration-count: infinite;
+          animation-duration: 20s;
+          max-width: 304px;
+
+          &--1 {
+            animation-name: hp-slide1;
+            z-index: 11;
+          }
+          &--2 {
+            animation-name: hp-slide2;
+            z-index: 11;
+          }
+          &--3 {
+            animation-name: hp-slide3;
+            z-index: 13;
+          }
+          &--4 {
+            animation-name: hp-slide4;
+            z-index: 12;
+          }
+          &--5 {
+            animation-name: hp-slide5;
+            z-index: 13;
+          }
+        }
+      }
+      &--4 {
+        top: 1%;
+        right: 9.5%;
+        width: 22%;
+        @media (max-width: $lg) {
+          width: 100%;
+        }
+      }
+      &--5 {
+        top: 21%;
+        right: -12%;
+        width: 22%;
+        @media (max-width: $lg) {
+          width: 100%;
+          margin-top: -48%;
+        }
+      }
+    }
+    @media (max-width: $lg) {
+      margin-block: rem(50);
+    }
+  }
+}
+
+.mobiles {
+  position: relative;
+  overflow: hidden;
+  border-radius: 19px;
+  opacity: 0.99;
+
+  &__map {
+    opacity: 0;
+    overflow-y: hidden;
+  }
+}
+
+.screenFrame {
+  position: absolute;
+  border-radius: 19px;
+  overflow: hidden;
+  @media (max-width: $md) {
+    border-radius: 10px;
+  }
+}
+
+.screen1 {
+  position: absolute;
+  top: 7.6%;
+  left: 0%;
+  width: 23%;
+  &__body {
+    animation: screenScroll1 10s 3s infinite;
+  }
+}
+
+.screen2 {
+  position: absolute;
+  top: 0%;
+  left: 24%;
+  width: 26%;
+}
+
+.screen3 {
+  left: 51%;
+  width: 23%;
+  top: 1.5%;
+  &__body {
+    animation: screenScroll2 10s infinite;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.screen4 {
+  position: absolute;
+  top: 14%;
+  right: -1.5%;
+  width: 26%;
+}
+
+.screen {
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 10;
+    left: 0;
+    position: absolute;
+  }
+  &__body {
+    position: absolute;
+    top: 0%;
+    left: 1%;
+    border-radius: 25px;
+    transition: 2s;
+    z-index: 5;
+  }
+  &__bar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0%;
+    z-index: 50;
+    display: flex;
+    justify-content: start;
+  }
+}
+
+.screen1__after {
+  position: absolute;
+  top: 78%;
+  left: 1.5%;
+  width: 20%;
+}
+
+.screen3__after {
+  position: absolute;
+  top: 73%;
+  left: 52%;
+  width: 20%;
+}
+
+.rating {
+  margin: 0;
+  padding: 0;
+  margin-top: rem(120);
+  font-weight: 100;
+  @media (max-width: $lg) {
+    margin-top: 0;
+  }
+}

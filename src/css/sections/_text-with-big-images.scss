@@ -1,0 +1,133 @@
+.s-text-with-big-images {
+  width: 100%;
+  margin-bottom: rem(230);
+  padding-bottom: rem(30);
+  height: 1900px;
+  padding-left: rem(130);
+  position: relative;
+
+  @media (max-width: $lg) {
+    align-items: center;
+    margin-top: (50);
+    padding: 0;
+    height: auto;
+    margin-bottom: rem(80);
+    padding-inline: rem(30);
+  }
+
+  &__heading {
+    width: 44%;
+    line-height: rem(10);
+
+    @media (max-width: $lg) {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__imgs {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 41%;
+    height: 37%;
+
+    border-radius: 30px;
+
+    -webkit-box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 1);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    @media (max-width: $lg) {
+      position: static;
+      width: 100%;
+      margin: 0;
+      padding-inline: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &--1 {
+      left: 10.5%;
+      top: 15.5%;
+
+      @media (max-width: $lg) {
+        top: 0%;
+      }
+    }
+
+    &--2 {
+      right: 5%;
+      top: 0;
+
+      @media (max-width: $lg) {
+        top: 0%;
+      }
+    }
+
+    &--3 {
+      right: 2.5%;
+      top: 42.7%;
+
+      @media (max-width: $lg) {
+        top: 20%;
+      }
+
+      &__Text {
+        position: absolute;
+        top: -120px;
+        right: -20px;
+        font-size: rem(104);
+        font-family: $font-secondary;
+        z-index: -1;
+
+        @media (max-width: $lg) {
+          display: none;
+        }
+      }
+    }
+
+    &--4 {
+      left: 8%;
+      top: 58.3%;
+
+      @media (max-width: $lg) {
+        top: 20%;
+      }
+
+      &__Text {
+        position: absolute;
+        top: -120px;
+        left: -20%;
+        font-size: rem(104);
+        font-family: $font-secondary;
+        z-index: -1;
+
+        @media (max-width: $lg) {
+          display: none;
+        }
+      }
+    }
+  }
+}

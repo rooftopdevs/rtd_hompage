@@ -1,0 +1,50 @@
+.s-projectsCategories {
+  margin-top: rem(290);
+  margin-bottom: rem(290);
+  display: flex;
+  gap: rem(65);
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+  &__left {
+    width: 30%;
+    @media (max-width: $lg) {
+      width: 100%;
+    }
+    .c-cta {
+      img {
+        margin-top: rem(20);
+      }
+    }
+  }
+  &__right {
+    width: 70%;
+    padding-left: rem(20);
+    @media (max-width: $lg) {
+      width: 100%;
+      padding-left: 0;
+    }
+    span {
+      display: block;
+      font-size: rem(18);
+      strong {
+        font-size: rem(22);
+      }
+    }
+    ul {
+      li {
+        border-bottom: 1px solid #fff;
+        padding-bottom: rem(30);
+        margin-bottom: rem(15);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.pink {
+  color: #ed1442;
+}

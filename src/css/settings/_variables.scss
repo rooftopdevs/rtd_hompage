@@ -1,0 +1,114 @@
+/**
+ * Container.
+ */
+
+ $container-mobile: 575px;
+ $container-table: 730px;
+ $container: 1230px;
+ $container-padding: 30; // px.
+ 
+ /**
+  * Spacing.
+  */
+ 
+ $spacing-mobile: 60; // px.
+ $spacing-tablet: 80;
+ $spacing: 110;
+ 
+ /**
+  * Fonts.
+  */
+ 
+ $font-base: "Mundial", sans-serif;
+ $font-secondary: "Gradient Premium Black", sans-serif;
+ $font-3: "Poppins", sans-serif;
+ $font-4: "Urbane", sans-serif;
+ 
+ /**
+  * Colors.
+  */
+ 
+ $text-color-base: #fff;
+ $text-color-secondary: #fffdf8;
+ $link-color: null;
+ $link-hover-color: null;
+ $color-1: #000;
+ $color-2: #fdf8f8;
+ $color-3: #ed1442;
+ $color-4: null;
+ $color-5: #f5dc27;
+ $background: #141414;
+ //gradients
+ $gradient-1: linear-gradient(
+   116.57deg,
+   #f39d9e 16.67%,
+   #d11452 58.65%,
+   #7c1436 99.95%
+ );
+ //papajohnes
+ $papajohns-green: #1a7f5e;
+ $papajohns-dark: #09392a;
+ //hp
+ $hp-background: #2191cd;
+ $hp-blue: #485cab;
+ //cocacola
+ $cocacola-background: #c70007;
+ //snickers
+ $snickers-1: #73492c;
+ $snickers-2: #43180b;
+ $snickers-3: #33170F;
+ 
+ //compete
+ $compete-1: #491cff;
+ //texaco
+ $texaco-1: #EC1C2D;
+ $texaco-2: #28363f;
+ //baby
+ $baby-1: #eaaa00;
+ $baby-2: #f7f7f7;
+ //nesquik
+ $nesquik-1: #27346e;
+ //uncommone
+ $uncommon-1: #e6d7cd;
+ $uncommon-2: #b9873c;
+ $uncommon-3: #415555;
+ //gsk
+ $gsk-1: #326c39;
+ 
+ //paddings
+ //Space betweens
+ $padding-8: rem(calc(8 * 1));
+ $padding-16: rem(calc(8 * 2));
+ $padding-24: rem(calc(8 * 3));
+ $padding-32: rem(calc(8 * 4));
+ $padding-40: rem(calc(8 * 5));
+ $padding-48: rem(calc(8 * 6));
+ $padding-64: rem(calc(8 * 8));
+ $padding-96: rem(calc(8 * 12));
+ $padding-104: rem(calc(8 * 13));
+ $padding-200: rem(calc(8 * 25));
+ $padding-240: rem(calc(8 * 30));
+ $padding-312: rem(calc(8 * 39));
+ 
+ /**
+  * Transition.
+  */
+ 
+ .tk-mundial {
+   font-family: "Mundial", sans-serif;
+ }
+ 
+ $transition-speed: 0.48s;
+ 
+ /**
+  * Breakpoints.
+  */
+ 
+ $xs: 374px;
+ $sm: 575px;
+ $md: 767px;
+ $lg: 991px;
+ $xl: 1199px;
+ $xxl: 1439px;
+ // $max: 1919px;
+ 

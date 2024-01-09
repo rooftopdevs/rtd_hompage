@@ -1,0 +1,80 @@
+.video {
+    &__header {
+      position: absolute;
+      color: rgb(0, 0, 0);
+      margin-top: rem(500);
+      opacity: 0;
+      animation: videoHeader 1s ease forwards;
+    }
+  
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    &__wrap {
+      transform: translateY(-200px);
+      animation: showNav 1s ease-in-out forwards;
+    }
+  
+    &__anim {
+      position: absolute;
+      width: 100%;
+      border-radius: rem(60);
+      overflow: hidden;
+      margin-top: 0;
+      object-fit: cover;
+      height: calc(100% - rem(100));
+      z-index: 900;
+      transform: scale(1.2);
+      animation: scaleVideo 1s ease-in-out forwards;
+      padding-inline: rem(20);
+  
+      + h1 {
+        position: absolute;
+        animation: none;
+      }
+    }
+  }
+  
+  @keyframes videoHeader {
+    0% {
+      margin-top: rem(500);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      margin-top: initial;
+    }
+  
+  }
+  
+  @keyframes scaleVideo {
+    0% {
+      z-index: 900;
+      margin-top: 0;
+      transform: scale(1.2);
+    }
+    100% {
+      z-index: 900;
+      margin-top: rem(100);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes showNav {
+    0% {
+      transform: translateY(-200px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

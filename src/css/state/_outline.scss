@@ -1,0 +1,40 @@
+.st-outline {
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-fill-color: transparent;
+  
+    @media (max-width: $md) {
+      -webkit-text-stroke: 0.5px;
+    }
+    &--gradient {
+      color: $color-1;
+      -webkit-text-stroke: 4px transparent;
+      background: $gradient-1;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: $background;
+      padding-inline: 3px;
+      padding: 5px;
+      @media (max-width: $lg) {
+        -webkit-text-stroke: 3px transparent;
+      }
+    }
+    &--semitransparent {
+      color: $color-1;
+      -webkit-text-stroke: 4px transparent;
+      background: $text-color-secondary;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: $background;
+      padding-inline: 3px;
+      padding: 5px;
+      @media (max-width: $lg) {
+        -webkit-text-stroke: 3px transparent;
+      }
+    }
+    &--white {
+      color: #fff;
+      background: none;
+      -webkit-text-fill-color: $background;
+      text-decoration: line-through;
+      text-decoration-color: #fff;
+    }
+  }
+  

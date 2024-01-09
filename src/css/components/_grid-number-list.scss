@@ -1,0 +1,25 @@
+.grid-number-list {
+    display: grid;
+    width: 93%;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 9%;
+    row-gap: 50px;
+    @media (max-width: $md) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    &__element {
+        &__number {
+            opacity: 0.4;
+        }
+        &__title {
+            font-weight: 900;
+            font-size: rem(22);
+            margin-bottom: rem(12);
+            &--big {
+                font-size: rem(32);
+                line-height: 1.2;
+                font-weight: 700;
+            }
+        }
+    }
+}

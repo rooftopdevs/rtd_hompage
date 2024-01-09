@@ -1,0 +1,286 @@
+.nav {
+    background-color: $color-3;
+    transform: translateX(100%);
+    transition: 1.2s;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    // padding-inline: rem(30);
+    padding-left: rem(35);
+    padding-right: rem(30);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(32);
+    padding-top: rem(165);
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    border-radius: 35px 0px 0px 0px;
+    z-index: 15;
+    overflow-x: hidden;
+    @media (max-width: $lg) {
+      width: 100%;
+      max-width: none;
+  
+      padding: rem(135) rem(27) rem(32);
+      padding-bottom: 100px;
+    }
+    &__wrapper {
+      display: flex;
+  
+      @media (max-width: $lg) {
+        flex-direction: column;
+      }
+      &__left {
+        width: 100%;
+        max-width: 275px;
+        font-size: rem(48);
+        line-height: rem(71);
+        @media (max-width: $lg) {
+          width: 100%;
+          font-size: (36);
+        }
+  
+        li {
+          margin-bottom: rem(34);
+          &:last-child {
+            margin-bottom: 0;
+          }
+  
+          @media (max-width: $lg) {
+            margin-bottom: rem(32);
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    &__footer {
+      max-width: rem(470);
+      margin-top: rem(34);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      position: relative;
+      gap: rem(130);
+  
+      .nav__full & {
+        max-width: 100%;
+      }
+  
+      @media (max-width: $lg) {
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+        max-width: 100%;
+        padding: 0;
+      }
+      @media (max-width: $xs) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &__adress {
+        flex: 0 1 rem(176);
+        font-size: rem(16);
+        max-width: 176px;
+        svg {
+          margin-top: rem(-4);
+        }
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        @media (max-width: $xs) {
+          flex: initial;
+        }
+      }
+      &--mobile {
+        display: none;
+        position: static;
+        margin-top: rem(50);
+        @media (max-width: $lg) {
+          display: block;
+          padding-bottom: rem(40);
+        }
+      }
+      &--contact {
+        display: none;
+  
+        @media (max-width: $lg) {
+          display: flex;
+        }
+      }
+      &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: 1s;
+        flex-wrap: wrap;
+  
+        @media (max-width: $lg) {
+          position: static;
+          padding: 0;
+          transform: translateX(0px);
+        }
+  
+        @media (max-width: $xs) {
+          margin-top: rem(12);
+        }
+  
+        li {
+          margin-inline: rem(15);
+          &:last-child {
+            margin-right: 0;
+          }
+  
+          @media (max-width: $xs) {
+            margin-bottom: 15px;
+            margin-left: 0;
+          }
+        }
+      }
+      &--active {
+        gap: rem(130);
+        justify-content: space-between;
+        @media (max-width: $lg) {
+          margin-top: rem(50);
+          align-items: center;
+          gap: 20px;
+        }
+        @media (max-width: $xs) {
+          align-items: flex-start;
+        }
+      }
+    }
+    &__services {
+      display: none;
+      width: 100%;
+      max-width: 1200px;
+      opacity: 0;
+      margin-left: rem(30);
+      transition: 1.2s;
+  
+      @media (max-width: $xl) {
+        margin-left: 0;
+      }
+  
+      @media (max-width: $lg) {
+        position: absolute;
+        background-color: $color-3;
+        width: 100%;
+        top: 0%;
+        padding-top: rem(98);
+        transform: translateX(100%);
+        z-index: 5;
+        min-height: 930px;
+        padding-left: rem(22);
+        bottom: 0;
+        padding-right: rem(22);
+      }
+      li {
+        margin-bottom: rem(40);
+  
+        @media (max-width: $lg) {
+          margin-bottom: rem(48);
+        }
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      span {
+        line-height: 40px;
+        margin-bottom: rem(48);
+        a {
+          @media (max-width: 1400px) {
+            font-size: rem(64);
+          }
+          @media (max-width: 1300px) {
+            font-size: rem(57);
+          }
+          @media (max-width: $xl) {
+            font-size: rem(50);
+          }
+          @media (max-width: 1100px) {
+            font-size: rem(45);
+          }
+          @media (max-width: $lg) {
+            font-size: rem(32);
+          }
+        }
+      }
+      &__col {
+        display: grid;
+        gap: 0 rem(10);
+        max-width: rem(900);
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: rem(10);
+        @media (max-width: $lg) {
+          display: flex;
+          height: 220px;
+          flex-direction: column;
+          flex-wrap: wrap;
+          grid-template-columns: repeat(2, 1fr);
+          width: 50%;
+        }
+        @media (max-width: $sm) {
+          height: 245px;
+        }
+        @media (max-width: 410px) {
+          height: 270px;
+        }
+        @media (max-width: $xs) {
+          height: auto;
+          width: 100%;
+        }
+  
+        li {
+          margin-bottom: rem(10);
+          @media (max-width: $lg) {
+            width: 100%;
+            height: auto;
+          }
+          a {
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+  
+        &--el {
+          grid-row-start: 2;
+          grid-row-end: 4;
+          grid-column-start: 3;
+          grid-column-end: 4;
+          padding-right: rem(50);
+          @media (max-width: $lg) {
+            grid-row-start: auto;
+            grid-row-end: auto;
+            grid-column-start: auto;
+            grid-column-end: auto;
+          }
+        }
+      }
+      span {
+        font-size: rem(72);
+        @media (max-width: $xl) {
+          font-size: (48);
+        }
+      }
+    }
+  }
+  
+  .nav__open {
+    transform: translateX(calc(100% - 535px));
+    transition: 1.2s;
+    @media (max-width: $lg) {
+      transform: translateX(0);
+    }
+  }
+  
+  .menuFZ {
+    font-size: rem(48);
+  }
+  

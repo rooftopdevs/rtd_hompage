@@ -1,0 +1,48 @@
+/**
+ * Logos section.
+ */
+
+.c-logos {
+  margin-top: $padding-64;
+  margin-bottom: $padding-200;
+  @media (max-width: $lg) {
+    margin-top: rem(32);
+    margin-bottom: rem(115);
+  }
+  // Logos.
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 4%;
+    @media (max-width: $lg) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 5%;
+      row-gap: 5%;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    &:nth-child(1) {
+      justify-content: flex-start;
+    }
+
+    align-items: center;
+    &--small {
+      padding-inline: 15px;
+    }
+  }
+  &__about {
+    margin-bottom: rem(64);
+    &__grid {
+      grid-template-columns: repeat(5, 1fr);
+      opacity: 0.5;
+      margin-bottom: 0;
+      @media (max-width: $lg) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5%;
+        row-gap: 5%;
+      }
+    }
+  }
+}

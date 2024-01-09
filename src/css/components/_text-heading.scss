@@ -1,0 +1,98 @@
+.c-text-heading {
+    display: flex;
+    gap: 50px;
+    font-size: rem(32);
+    margin-bottom: rem(200);
+  
+    &:last-child {
+      margin-bottom: rem(0);
+    }
+  
+    @media (max-width: $xl) {
+      justify-content: space-between;
+      font-size: rem(26);
+    }
+  
+    @media (max-width: $lg) {
+      flex-direction: column;
+      margin-bottom: $spacing-mobile;
+      font-size: rem(18);
+      margin-top: rem(96);
+      gap: 0;
+    }
+    h3 {
+      font-size: rem(72);
+      position: relative;
+      margin-top: rem(20);
+      width: 20%;
+      min-width: 350px;
+  
+      @media (max-width: 1267px) {
+        padding-left: rem(38);
+      }
+  
+      @media (max-width: $lg) {
+        width: 100%;
+        margin-top: 0;
+      }
+      @media (max-width: $md) {
+        font-size: rem(48);
+      }
+      br {
+        @media (max-width: $lg) {
+          display: none;
+        }
+      }
+    }
+  
+    &__text {
+      line-height: rem(52);
+      padding-left: rem(5);
+      font-weight: 100;
+      @media (max-width: $xl) {
+        padding-left: rem(50);
+        line-height: 1.625;
+      }
+      @media (max-width: $lg) {
+        line-height: 160%;
+        margin-top: rem(26);
+      }
+      @media (max-width: $lg) {
+        width: 100%;
+        padding-left: 0;
+      }
+      p {
+        &:nth-child(2) {
+          margin-top: 20px;
+        }
+        strong {
+          display: block;
+          margin-bottom: rem(8);
+        }
+      }
+    }
+    &__number {
+      position: absolute;
+      top: rem(10);
+      left: rem(-40);
+      font-size: rem(18);
+      font-weight: 400;
+      font-family: $font-base;
+      margin-bottom: rem(20);
+  
+      @media (max-width: 1267px) {
+        display: block;
+        margin: 0;
+        top: rem(2);
+        left: 0;
+      }
+    }
+    &__rating {
+      display: block;
+      margin-top: rem(40);
+      @media (max-width: $lg) {
+        margin-top: rem(24);
+      }
+    }
+  }
+  

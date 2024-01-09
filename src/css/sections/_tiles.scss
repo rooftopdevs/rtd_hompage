@@ -1,0 +1,111 @@
+/**
+ * Tiles section.
+ */
+.tiles {
+    &__container {
+        display: flex;
+        align-items: center;
+        column-gap: 12.5%;
+
+        @media (max-width: $xl) {
+            column-gap: 5%;
+        }
+
+        @media (max-width: $lg) {
+            flex-direction: column-reverse;
+            // Safari not support gap with reverse flex-direction -.-
+            // row-gap: rem(40);
+        }
+    }
+
+    &__aside,
+    &__body {
+        flex: 1;
+    }
+
+    &__aside {
+        ol {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: rem(30);
+            counter-reset: count;
+
+            @media (max-width: $md) {
+                gap: rem(15);
+            }
+
+            @media (max-width: $xs) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        li {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            aspect-ratio: 1;
+            padding: rem(25);
+            border: 1px solid $text-color-secondary;
+            transition: color $transition-speed, background-color $transition-speed;
+
+            @media (max-width: $sm) {
+                aspect-ratio: auto;
+                padding-top: rem(95);
+            }
+
+            &::before {
+                counter-increment: count;
+                content: counter(count);
+                position: absolute;
+                top: rem(25);
+                left: rem(25);
+                font-family: $font-secondary;
+                font-size: rem(32);
+                line-height: 1;
+                -webkit-text-stroke: 1px $text-color-secondary;
+                -webkit-text-fill-color: transparent;
+                transition: all $transition-speed;
+            }
+
+            &:hover {
+                background-color: #fff;
+                color: $color-1;
+
+                &::before {
+                    -webkit-text-stroke: 1px $color-1;
+                    -webkit-text-fill-color: #fff;
+                }
+            }
+
+            p {
+                line-height: rem(26);
+            }
+        }
+    }
+
+    &__body {
+        @media (max-width: $lg) {
+            // Just Safari being Safari.
+            margin-bottom: rem(40);
+        }
+        &__span {
+            font-family: $font-secondary;
+            margin-bottom: rem(16);
+            display: block;
+        }
+        &__heading {
+            font-size: rem(72);
+            @media (max-width: $md) {
+                font-size: rem(48);
+            }
+        }
+        &__text {
+            color: #b6bac6;
+
+            &:nth-last-child(2) {
+                margin-top: rem(20);
+                margin-bottom: rem(30);
+            }
+        }
+    }
+}

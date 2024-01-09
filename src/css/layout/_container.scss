@@ -1,0 +1,17 @@
+.l-container {
+    width: 100%;
+    max-width: $container;
+    margin: 0 auto;
+    padding: 0 rem($container-padding);
+    &--md {
+      max-width: calc($container - 200px);
+    }
+    @media (max-width: $lg) {
+      max-width: $container-table;
+      padding-inline: rem(16);
+    }
+    @media (max-width: $md) {
+      max-width: $container-mobile;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+.c-cta {
+    font-size: rem(18);
+    line-height: 18px;
+    @media (max-width: $lg) {
+      padding-left: 0;
+    }
+    h3 {
+      font-size: rem(18);
+      font-weight: bold;
+    }
+    h2 {
+      margin-bottom: rem(16);
+      font-size: rem(48);
+    }
+    p {
+      margin-bottom: rem(32);
+      line-height: rem(28.8);
+    }
+    &__heading {
+      margin-top: rem(8);
+    }
+  }
+  

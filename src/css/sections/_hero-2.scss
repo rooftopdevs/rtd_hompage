@@ -1,0 +1,145 @@
+@keyframes arrow2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(rem(-25));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes arrowFill2 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: #fff;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+
+.hero-2 {
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: rem(160);
+  @media (max-width: $lg) {
+    margin-bottom: 0;
+  }
+  &__img {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+  }
+  &__top-container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: rem(10);
+    @media (max-width: $lg) {
+      padding-bottom: rem(50);
+    }
+    @media (max-width: $sm) {
+      padding-bottom: rem(100);
+    }
+    @media (max-width: $xs) {
+      padding-bottom: rem(100);
+    }
+  }
+  &__header-wrapper {
+    text-align: left;
+    display: inline-block;
+  }
+  &__header {
+    text-align: right;
+    width: rem(1100);
+    margin: 0 auto;
+    padding-inline: 1rem;
+
+    @media (max-width: $lg) {
+      width: rem(730);
+      max-width: 100%;
+    }
+  }
+
+  &__img {
+    top: rem(-13);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    img {
+      height: 100%;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+  }
+  &__header-caption {
+    margin: 0 0 rem(12);
+  }
+  &__header-title {
+    font-size: rem(120);
+    font-weight: 900;
+    line-height: 1;
+    @media (max-width: $lg) {
+      font-size: rem(70);
+    }
+    @media (max-width: $sm) {
+      font-size: rem(45);
+    }
+    @media (max-width: $xs) {
+      font-size: rem(36);
+    }
+    @media (orientation: landscape) and (min-width: $lg) and (max-height: 820px) {
+      font-size: rem(100);
+    }
+    span {
+      color: #ffd60a;
+    }
+    svg {
+      animation: 1.5s 0.5s infinite arrowFill2;
+      @media (max-width: $lg) {
+        width: rem(65);
+      }
+      @media (max-width: $sm) {
+        width: rem(45);
+      }
+    }
+  }
+  &__arrow {
+    position: relative;
+    display: inline-block;
+    animation: arrow2 1.5s infinite;
+  }
+  &__text {
+    width: rem(970);
+    max-width: 100%;
+    margin: rem(80) auto;
+    font-size: rem(32);
+    font-weight: 200;
+    line-height: 160%;
+    @media (max-width: $lg) {
+      font-size: rem(18);
+      line-height: rem(28.8);
+    }
+    p {
+      margin: 0 0 32px;
+      span {
+        display: inline-block;
+        &.st-boldUnderline__changeColor {
+          &::after {
+            content: "truly dimension smashing.";
+          }
+        }
+      }
+    }
+  }
+}

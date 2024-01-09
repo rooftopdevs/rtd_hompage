@@ -1,0 +1,12 @@
+.c-text {
+    font-size: rem(32);
+    color: $color-2;
+    line-height: rem(54);
+    &:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+    @media (max-width: $lg) {
+      font-size: rem(24);
+    }
+  }
+  

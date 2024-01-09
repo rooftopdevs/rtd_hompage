@@ -1,0 +1,133 @@
+.s-pictureGrid {
+  margin-top: rem(290);
+  margin-bottom: rem(280);
+
+  &--services {
+    margin-bottom: rem(200);
+    margin-top: rem(200);
+
+    @media (max-width: $lg) {
+      margin: 0;
+      margin-top: rem(160) !important;
+    }
+
+    .l-container {
+      @media (max-width: $lg) {
+        max-width: 100%;
+      }
+    }
+
+    .s-pictureGrid {
+      &__grid {
+        margin-top: 0;
+      }
+      &__header {
+        margin-bottom: rem(26);
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width: $lg) {
+          flex-direction: column;
+        }
+
+        p {
+          max-width: rem(470);
+          line-height: 160%;
+          padding-top: rem(8);
+        }
+      }
+
+      &__title {
+        font-size: 72px;
+        line-height: 120%;
+        margin-right: rem(55);
+        letter-spacing: -0.9px;
+
+        @media (max-width: $lg) {
+          font-size: 48px;
+          margin-right: 0;
+        }
+      }
+    }
+
+    .leadership-mobile {
+      max-width: rem(730);
+    }
+  }
+
+  @media (max-width: $lg) {
+    margin-top: 0;
+    padding-inline: 0;
+    margin-inline: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: rem(-65);
+
+    column-gap: rem(25);
+    row-gap: rem(105);
+    @media (max-width: $md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__name {
+      display: block;
+      font-weight: 900;
+      font-size: rem(22);
+      margin-top: rem(20);
+    }
+    &__linkedin {
+      max-width: 16px;
+
+      img {
+        border-radius: 0;
+      }
+    }
+  }
+
+  &__heading {
+    position: relative;
+    z-index: 10;
+    @media (max-width: $lg) {
+      padding-inline: rem(16);
+      display: none;
+    }
+  }
+
+  &--ar {
+    margin-top: rem(200);
+    margin-bottom: rem(95);
+
+    h2 {
+      font-size: rem(72);
+      letter-spacing: -0.9px;
+    }
+
+    .s-easyColumn__col {
+      gap: rem(52);
+
+      &__right {
+        max-width: rem(470);
+      }
+    }
+
+    .s-easyColumn__col__services + .s-easyColumn__col__right {
+      margin-bottom: rem(75);
+    }
+  }
+
+  &--web3 {
+    margin-top: rem(160);
+  }
+}
+
+.leadership__grid {
+  margin-top: rem(-27);
+}
+
+.leadership {
+  @media (max-width: $lg) {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+.number-list {
+    position: relative;
+    &__heading {
+        margin-bottom: 20px;
+        padding-right: 5%;
+    }
+    &__wrapper {
+        position: relative;
+        z-index: 20;
+    }
+}

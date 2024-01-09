@@ -1,0 +1,99 @@
+.c-text-with-col {
+    padding-inline: rem(30);
+    font-size: rem(32);
+    @media (max-width: $lg) {
+      font-size: rem(18);
+      padding: rem(5) rem(16);
+      line-height: normal;
+    }
+    @media (max-width: $sm) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    h2 {
+      font-size: rem(72);
+      @media (max-width: $md) {
+        position: relative;
+        font-size: rem(48);
+        margin-bottom: rem(11);
+        padding-left: rem(40);
+  
+        &::before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: rem(25);
+          height: rem(25);
+          background-size: rem(25);
+          background-repeat: no-repeat;
+          background-image: url("data:image/svg+xml,%3Csvg width='84' height='88' viewBox='0 0 84 88' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M45.88 52.4001H5V35.2001H45.88H48.3061L46.5847 33.4905L29.8967 16.9176L40.84 5.97427L78.6658 43.8001L40.84 81.6258L29.8967 70.6825L46.5847 54.1096L48.3061 52.4001H45.88Z' stroke='white' stroke-width='2'%3E%3C/path%3E%3C/svg%3E");
+          position: absolute;
+          left: 0;
+          top: rem(8);
+        }
+      }
+      svg {
+        fill: #fff;
+        @media (max-width: $md) {
+          display: none;
+        }
+      }
+    }
+    & > p {
+      @media (max-width: $lg) {
+        line-height: 160%;
+      }
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      font-size: rem(18);
+      margin-top: rem(160);
+      gap: rem(32);
+      margin-bottom: rem(200);
+      @media (max-width: $lg) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-block: rem(32);
+        width: 100%;
+      }
+      @media (max-width: $md) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: rem(30);
+      }
+      strong {
+        font-size: 22;
+        display: block;
+        margin-bottom: rem(10);
+        @media (max-width: $md) {
+          font-size: rem(18);
+          margin-bottom: rem(6);
+        }
+      }
+    }
+    &__col {
+      width: 100%;
+  
+      @media (max-width: $md) {
+        font-size: rem(16);
+      }
+  
+      a {
+        text-decoration: underline;
+      }
+    }
+  
+    &__platforms {
+      display: flex;
+      align-items: center;
+  
+      svg {
+        display: block;
+        margin-right: rem(16);
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  

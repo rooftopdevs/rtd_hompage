@@ -1,0 +1,10 @@
+.c-title {
+    font-size: rem(80);
+    -webkit-text-stroke: 1.5px $text-color-secondary;
+    -webkit-text-fill-color: transparent;
+  
+    @media (max-width: $md) {
+      font-size: rem(48);
+    }
+  }
+  

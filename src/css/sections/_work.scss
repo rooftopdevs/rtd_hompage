@@ -1,0 +1,122 @@
+.s-work {
+  overflow: hidden;
+  position: relative;
+  z-index: 40;
+  @media (max-width: $lg) {
+    margin-bottom: rem(100);
+  }
+  &__text {
+    margin-bottom: rem(32);
+    @media (max-width: $lg) {
+      font-size: rem(16);
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-center;
+    flex-wrap: wrap;
+    margin-bottom: rem(24);
+    row-gap: 30px;
+    @media (max-width: $lg) {
+      display: none;
+    }
+    h1 {
+      font-size: rem(18);
+      font-family: $font-base;
+      font-weight: 300;
+      margin: auto 0;
+      @media (max-width: $lg) {
+        margin: auto;
+      }
+    }
+    &__options {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      @media (max-width: $lg) {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        a {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__select {
+    outline: 0;
+    display: none;
+    border: 2px solid #fff;
+    border-radius: rem(26);
+    width: 100%;
+    color: #fff;
+    padding: rem(8) rem(29) rem(12) rem(20);
+    padding-right: 100px;
+    font-size: rem(16);
+    font-weight: 700;
+    position: relative;
+    background-color: transparent;
+    margin-bottom: rem(24);
+    position: relative;
+
+    option {
+      background-color: $background;
+    }
+    @media (max-width: $lg) {
+      display: block;
+    }
+  }
+  &-btn {
+    font-weight: 700;
+  }
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-position-x: 95%;
+  background-position: calc(100% - 18px) center !important;
+  background: url("../img/select-arrow.svg") no-repeat;
+  padding: 8px 32px 8px 16px;
+  position: relative;
+}
+.margin {
+  height: 200px;
+  width: 100%;
+  display: block;
+  @media (max-width: $lg) {
+    height: rem(148);
+  }
+}
+
+.s-work__ecommerce{
+  .c-project2Sizes{
+    margin-bottom: rem(100);
+    @media (min-width: $lg) {
+      margin-bottom: rem(240);
+    }
+  }
+}
+
+.s-work--d-agency{
+  max-width: 1133px;
+
+  .c-project2Sizes{
+    padding-right: 0;
+  }
+
+
+  .c-project2Sizes--small{
+    margin-top: 50px;
+  }
+
+  .c-project2Sizes{
+    margin-bottom: rem(100);
+    @media (min-width: $lg) {
+      margin-bottom: rem(262);
+    }
+  }
+}

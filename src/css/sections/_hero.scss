@@ -1,0 +1,417 @@
+// Hero Section
+.s-hero {
+  width: 100%;
+  // min-height: 800px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: $lg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: $sm) {
+    height: 100vh;
+  }
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    @media (max-width: $lg) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  h1:not(.video__header) {
+    font-size: var(--imposibleTextFontSize);
+    margin-top: var(--imposibleTextMarginTop);
+    text-align: center;
+    margin-left: var(--imposibleTextMargin);
+    position: relative;
+    transform: translateX(-100vw);
+    //animation
+    animation: impossible-animation 2s 0.5s, impossible__transform-aniamation 2s 4.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    @media (max-width: $lg) {
+      animation: impossible-animation--mobile 2s 0.5s;
+      animation-fill-mode: forwards;
+      margin-top: 0;
+      margin-left: 0;
+      padding: 0;
+      width: 100%;
+    }
+    span {
+      animation: opacityDown 2s 4.5s;
+      animation-fill-mode: forwards;
+    }
+    &::after {
+      content: "Impossible.";
+      position: absolute;
+      color: $text-color-base;
+      right: 0;
+      top: rem(0);
+      left: 0;
+      opacity: 0;
+
+      -webkit-text-fill-color: $text-color-base;
+      -webkit-text-stroke: 0px;
+      //animation
+      animation: opacityUp 2s 4.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+  &__done {
+    position: relative;
+    width: calc(var(--imposibleTextFontSize) * 2.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: rem(120);
+    margin: 0 auto;
+    transform: translateX(40vw);
+    animation: done-animation 2s 2.5s, color-animation 2s 4.5s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    @media (max-width: $lg) {
+      animation: done-animation 2s 2.5s;
+      animation-fill-mode: forwards;
+    }
+    img {
+      width: 100%;
+      opacity: 0;
+      animation: opacityUp 2s 2.5s;
+      animation-fill-mode: forwards;
+    }
+    svg {
+      path {
+        animation: svgFill 1.5s 2.5s;
+        animation-fill-mode: forwards;
+      }
+    }
+    //animation
+    // animation: done-animation 1.5s 1.5s, color-animation 1.5s 3s;
+    // animation-fill-mode: forwards;
+  }
+  &__bg {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: opacityUp 1.5s;
+    animation-fill-mode: forwards;
+    top: 0;
+    left: 0;
+    &--texture {
+      mix-blend-mode: overlay;
+      opacity: 0.2;
+      width: 100%;
+      height: 100%;
+      background-image: url(data:image/png;base64,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);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--1,
+    &--2,
+    &--3,
+    &--4 {
+      position: absolute;
+    }
+    &--1 {
+      top: -16px;
+      left: -816px;
+      width: 2800px;
+      animation: 10s ease-in 10s infinite gradientTransform;
+      @media (max-width: $lg) {
+        animation: 10s ease-in 10s infinite gradientTransformMobile;
+        left: -300px;
+        width: 2200px;
+        transform: rotate(104deg);
+      }
+      @media (max-width: $md) {
+        width: 1700px;
+      }
+    }
+    &--2 {
+      top: -1015px;
+      right: -800px;
+      animation: 10s ease-in 10s infinite gradientTransform2;
+      @media (max-width: $md) {
+        animation: 10s ease-in 10s infinite gradientTransform2Mobile;
+        top: -53px;
+        right: -433px;
+        width: 824px;
+        transform: rotate(18deg);
+      }
+    }
+    &--3 {
+      top: -94px;
+      right: -790px;
+    }
+    &--4 {
+      top: 102px;
+      right: -456px;
+      width: 100%;
+    }
+  }
+  &__sub {
+    h1 {
+      animation: none;
+    }
+  }
+}
+
+.heroArrow {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: var(--heroArrowTop);
+  left: var(--heroArrowLeft);
+  transform: translateX(-40vw);
+  opacity: 0;
+  animation: arrow1 2s 2.5s, arrowRotate 2s 4.5s, arrowInfinite 1.35s 6.5s infinite;
+  animation-fill-mode: forwards;
+  @media (max-width: $lg) {
+    animation: arrow1 2s 2.5s;
+    animation-fill-mode: forwards;
+  }
+  // @media(max-width: $xxl) {
+  //     border: 1px solid black;
+  // }
+  // @media(max-width: $xl) {
+  //     border: 1px solid green;
+  // }
+  // @media(max-width: $lg) {
+  //     border: 1px solid red;
+  // }
+  // @media(max-width: $md) {
+  //     border: 1px solid purple;
+  // }
+  // @media(max-width: $sm) {
+  //     border: 1px solid aqua;
+  // }
+  // @media(max-width: $xs) {
+  //     border: 1px solid yellow;
+  // }
+  svg {
+    transform: scale(var(--svgSize));
+    animation: arrowFill 1.35s 6.5s infinite;
+    margin: 0;
+  }
+}
+
+.little-arrow {
+  position: absolute;
+  bottom: rem(90);
+  right: rem(20);
+  z-index: 20;
+  display: none;
+  opacity: 0;
+
+  animation: opacityUp 2s 5.5s, arrowInfinite2 2s 6.5s infinite;
+  animation-fill-mode: forwards;
+
+  svg {
+    animation: arrowFill 2s 6.5s infinite;
+  }
+
+  @media (max-width: $lg) {
+    display: block;
+  }
+}
+// Animations
+// Translate from left on 'imposible'
+@keyframes impossible-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes impossible-animation--mobile {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+//Change position on 'imposible'
+@keyframes impossible__transform-aniamation {
+  to {
+    transform: translateX(0);
+    margin-bottom: var(--imposibleTextMarginBottom);
+  }
+}
+
+//'done' first animation
+@keyframes done-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes svgAnimation {
+  to {
+    width: 1000px;
+    height: auto;
+  }
+}
+
+//Change color on 'done'
+@keyframes color-animation {
+  from {
+  }
+  to {
+    margin: 0 auto;
+    width: var(--mWidth);
+    transform: translateY(var(--doneTransform));
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(1078%) hue-rotate(16deg) brightness(89%)
+      contrast(84%);
+  }
+}
+
+// Opacity to 0
+@keyframes opacityDown {
+  to {
+    opacity: 0;
+  }
+}
+
+//Opacity to 1
+@keyframes opacityUp {
+  to {
+    opacity: 1;
+  }
+}
+
+//Red gradient animation
+@keyframes gradientTransform {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: rotate(-20deg) translateX(25%) translateY(12%);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  70% {
+    transform: translateX(0);
+  }
+}
+@keyframes gradientTransformMobile {
+  0% {
+    transform: rotate(104deg) translateY(0);
+  }
+  20% {
+    transform: rotate(90deg) translateY(35%);
+  }
+  50% {
+    transform: rotate(90deg) translateY(35%);
+  }
+  70% {
+    transform: rotate(104deg) translateY(0);
+  }
+}
+@keyframes gradientTransform2Mobile {
+  0% {
+    transform: rotate(18deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(18deg);
+  }
+}
+
+@keyframes gradientTransform2 {
+  0% {
+    transform: rotate(0) translateY(0) translateX(0);
+  }
+  20% {
+    transform: rotate(-20deg) translateY(0) translateX(5%);
+  }
+  50% {
+    transform: translateY(0) translateX(0);
+  }
+  70% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes arrow1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-15px);
+    opacity: 1;
+  }
+}
+
+@keyframes arrowRotate {
+  to {
+    transform: rotate(90deg) translateX(var(--arrowTransform));
+  }
+}
+
+@keyframes arrowInfinite {
+  0% {
+    transform: rotate(90deg) translateX(var(--arrowTransform));
+  }
+  50% {
+    transform: rotate(90deg) translateX(calc(var(--arrowTransform) - 2%));
+  }
+  100% {
+    transform: rotate(90deg) translateX(var(--arrowTransform));
+  }
+}
+@keyframes arrowInfinite2 {
+  0% {
+    transform: translateY(var(0));
+  }
+  50% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrowFill {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: #fff;
+  }
+  100% {
+    fill: transparent;
+  }
+}
+
+@keyframes svgFill {
+  to {
+    fill: $background;
+  }
+}

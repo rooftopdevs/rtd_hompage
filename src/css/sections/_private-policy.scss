@@ -1,0 +1,50 @@
+.private-policy {
+    margin-top: rem(200);
+    max-width: 970px;
+    margin-left: 100px;
+    @media (max-width: $xl) {
+        margin-left: auto;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+    h1,
+    span {
+        font-size: rem(72);
+        margin-bottom: rem(112);
+        display: inline-block;
+        font-family: $font-secondary;
+    }
+    h2 {
+        font-size: rem(22);
+        margin-bottom: rem(32);
+    }
+    h3 {
+        font-size: rem(18);
+        margin-bottom: rem(16);
+        &:before {
+            content: "";
+            margin-right: 8px;
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+
+            background-image: url("../img/arrow_full.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    &__block {
+        margin-bottom: rem(64);
+    }
+    &__small {
+        margin-bottom: rem(32);
+    }
+    &__space {
+        margin-bottom: rem(32);
+    }
+}
+.cookies {
+    margin-bottom: rem(400);
+}

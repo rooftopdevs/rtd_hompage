@@ -1,0 +1,12 @@
+.l-p-block {
+    padding-block: rem($spacing);
+  
+    @media (max-width: $lg) {
+      padding-block: rem($spacing-tablet);
+    }
+  
+    @media (max-width: $md) {
+      padding-block: rem($spacing-mobile);
+    }
+  }
+  

@@ -1,0 +1,184 @@
+@mixin build-circle($degree, $radius) {
+  -webkit-transform: rotate($degree) translate($radius) rotate(-$degree);
+  -moz-transform: rotate($degree) translate($radius) rotate(-$degree);
+  -ms-transform: rotate($degree) translate($radius) rotate(-$degree);
+  -o-transform: rotate($degree) translate($radius) rotate(-$degree);
+  transform: rotate($degree) translate($radius) rotate(90deg);
+}
+
+.uncommon-an {
+  background-color: $uncommon-3;
+  display: flex;
+  padding-bottom: rem(165);
+
+  @media (max-width: $lg) {
+    padding: rem(56) 0;
+  }
+
+  .l-container {
+    display: flex;
+  }
+
+  	&-left {
+		flex: 1;
+		display: flex;
+		justify-content: flex-start;
+		margin-top: rem(98);
+		margin-left: rem(72);
+
+		img {
+			max-width: 375px;
+			max-height: 422px;
+		}
+
+		@media (max-width: $lg) {
+			margin: 0;
+			justify-content: center;
+		}
+	}
+	&-right {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		@media (max-width: $lg) {
+			display: none;
+		}
+		img {
+			max-width: 568px;
+		}
+	}
+}
+
+.sun {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: rem(50);
+  &__arrow {
+    position: absolute;
+    transform: rotate(285deg) translate(100px) rotate(90deg);
+  }
+  &__circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #282827;
+    text-align: center;
+    -webkit-box-shadow: 0px 12px 54px 0px rgba(175, 200, 200, 1);
+    -moz-box-shadow: 0px 12px 54px 0px rgba(175, 200, 200, 1);
+    box-shadow: 0px 12px 54px 0px rgba(175, 200, 200, 1);
+
+    span {
+      display: block;
+      &:nth-child(1) {
+        font-size: rem(49);
+      }
+      &:nth-child(2) {
+        font-size: 18px;
+      }
+    }
+  }
+  &__point,
+  .center {
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 35px;
+    background: #fff;
+    border-radius: 20px;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #e74c3c;
+    text-decoration: none;
+    /*animation: linear coloration 5s infinite;*/
+    -webkit-animation: linear coloration 5s infinite;
+  }
+  &__btns {
+    display: flex;
+    margin-top: rem(30);
+    gap: rem(15);
+  }
+  &__btn {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #328291;
+    touch-action: manipulation;
+    cursor: pointer;
+  }
+}
+
+//sun around
+.deg0 {
+  @include build-circle(0deg, 150px);
+}
+
+.deg15 {
+  @include build-circle(15deg, 150px);
+}
+.deg30 {
+  @include build-circle(30deg, 150px);
+}
+.deg150 {
+  @include build-circle(150deg, 150px);
+}
+.deg165 {
+  @include build-circle(165deg, 150px);
+}
+
+.deg180 {
+  @include build-circle(180deg, 150px);
+}
+
+.deg195 {
+  @include build-circle(195deg, 150px);
+}
+
+.deg210 {
+  @include build-circle(210deg, 150px);
+}
+
+.deg225 {
+  @include build-circle(225deg, 150px);
+}
+
+.deg240 {
+  @include build-circle(240deg, 150px);
+}
+
+.deg255 {
+  @include build-circle(255deg, 150px);
+}
+
+.deg270 {
+  @include build-circle(270deg, 150px);
+}
+
+.deg285 {
+  @include build-circle(285deg, 150px);
+}
+
+.deg300 {
+  @include build-circle(300deg, 150px);
+}
+
+.deg315 {
+  @include build-circle(315deg, 150px);
+}
+
+.deg330 {
+  @include build-circle(330deg, 150px);
+}
+
+.deg345 {
+  @include build-circle(345deg, 150px);
+}
