@@ -19,10 +19,10 @@
   * Fonts.
   */
  
- $font-base: "Mundial", sans-serif;
- $font-secondary: "Gradient Premium Black", sans-serif;
- $font-3: "Poppins", sans-serif;
- $font-4: "Urbane", sans-serif;
+ $font-base: "D2Coding", sans-serif;
+ $font-secondary: "D2Coding", sans-serif;
+ $font-3: "D2Coding", sans-serif;
+ $font-4: "D2Coding", sans-serif;
  
  /**
   * Colors.
@@ -77,18 +77,18 @@
  
  //paddings
  //Space betweens
- $padding-8: rem(calc(8 * 1));
- $padding-16: rem(calc(8 * 2));
- $padding-24: rem(calc(8 * 3));
- $padding-32: rem(calc(8 * 4));
- $padding-40: rem(calc(8 * 5));
- $padding-48: rem(calc(8 * 6));
- $padding-64: rem(calc(8 * 8));
- $padding-96: rem(calc(8 * 12));
- $padding-104: rem(calc(8 * 13));
- $padding-200: rem(calc(8 * 25));
- $padding-240: rem(calc(8 * 30));
- $padding-312: rem(calc(8 * 39));
+ $padding-8: 8rem;
+ $padding-16: 16rem;
+ $padding-24: 24rem;
+ $padding-32: 32rem;
+ $padding-40: 40rem;
+ $padding-48: 48rem;
+ $padding-64: 64rem;
+ $padding-96: 96rem;
+ $padding-104: 104rem;
+ $padding-200: 200rem;
+ $padding-240: 240rem;
+ $padding-312: 312rem;
  
  /**
   * Transition.

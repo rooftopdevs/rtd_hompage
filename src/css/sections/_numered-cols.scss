@@ -27,7 +27,7 @@
     font-size: rem(18);
     font-weight: 300;
     transition: 5s;
-    margin-bottom: calc($padding-312 - 10px);
+    margin-bottom: calc(19.5rem - 10px);
 
     @media (max-width: $lg) {
       grid-template-columns: 1fr;

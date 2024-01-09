@@ -131,7 +131,7 @@
   }
   
   .papa-johns {
-    background-image: url("../img/papa-johns-bg.svg");
+    background-image: url("../assets/papa-johns-bg.svg");
     background-size: cover;
   
     .c-projectBox {
@@ -170,9 +170,9 @@
   .hp {
     background-color: $hp-background;
     &:before {
-      background-image: url("../img/hp-bg.svg");
+      background-image: url("../assets/hp-bg.svg");
       @media (max-width: $lg) {
-        background-image: url("../img/hp-component-bg-mobiles.svg");
+        background-image: url("../assets/hp-component-bg-mobiles.svg");
       }
     }
     .c-projectBox {
@@ -250,7 +250,7 @@
     background-color: $cocacola-background;
     position: relative;
     &:before {
-      background-image: url("../img/coca-cola-bg.svg");
+      background-image: url("../assets/coca-cola-bg.svg");
     }
     &:after {
       content: "";
@@ -260,7 +260,7 @@
       height: 100%;
       bottom: 0;
       right: 0;
-      background-image: url("../img/coca-cola-bubbles.svg");
+      background-image: url("../assets/coca-cola-bubbles.svg");
     }
     &__projectBox__heading {
       z-index: 3;

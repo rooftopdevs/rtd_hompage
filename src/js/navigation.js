@@ -16,12 +16,10 @@ const headingWrapper = document.querySelector(".c-header__container ");
 const openMenuContact = document.querySelectorAll(".open-menu-contact");
 const openBottomContact = document.querySelectorAll(".open-bottom-contact");
 const burgerAn = burger.firstChild.nextSibling;
-const socials = document.querySelector(".nav__footer__socials");
 const contactForm = document.querySelector("#contact");
 const allHeader = document.querySelector(".c-header");
 const hamburgerMenu = document.querySelector(".c-header__hamburger__lines");
 const logo = document.querySelector(".c-main-logo");
-const lastSocials = document.querySelector("#last-nav-socials");
 allHeader.classList.add("c-header--open");
 const body = document.querySelector("body");
 
@@ -95,13 +93,11 @@ liContact.addEventListener("click", openContact);
 function openServices() {
   services.classList.add("visible");
   outlineElements();
-  lastSocials.classList.add("nav__footer__socials--active");
   liServices.parentElement.classList.remove("st-outline");
   liServices.classList.add("st-boldArrow--focus");
   liContact.classList.remove("st-boldArrow--focus");
   services.classList.add("opacity");
   navigation.classList.add("nav__full");
-  socials.classList.add("nav__footer__socials--active");
   contact.classList.remove("visible");
   contact.classList.remove("opacity");
   setTimeout(() => {
@@ -110,6 +106,7 @@ function openServices() {
 }
 
 function openContact() {
+  console.log(navigation)
   contact.classList.add("visible");
   outlineElements();
   navFooter.classList.add("nav__footer--active");
@@ -118,9 +115,7 @@ function openContact() {
   liServices.classList.remove("st-boldArrow--focus");
 
   contact.classList.add("opacity");
-  lastSocials.classList.add("nav__footer__socials--active");
   navigation.classList.add("nav__full");
-  socials.classList.add("nav__footer__socials--active");
   services.classList.remove("visible");
   services.classList.remove("opacity");
   setTimeout(() => {
@@ -162,7 +157,6 @@ burger.addEventListener("mouseout", () => {
 function closeMenu() {
   burgerAn.classList.remove("c-header__hamburger__lines--open");
   burgerAn.classList.remove("c-header__hamburger__lines--open--hover");
-  socials.classList.remove("nav__footer__socials--active");
   liServices.classList.remove("st-boldArrow--focus");
   liContact.classList.remove("st-boldArrow--focus");
   navFooter.classList.remove("nav__footer--active");
@@ -174,7 +168,6 @@ function closeMenu() {
   contact.classList.remove("visible");
   services.classList.remove("transformation-mobile");
   contact.classList.remove("transformation-mobile");
-  lastSocials.classList.remove("nav__footer__socials--active");
   body.classList.remove("overflow");
   // closeForm();
   outlineElementsReverse();

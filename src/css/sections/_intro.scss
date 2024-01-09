@@ -5,8 +5,8 @@
 .s-intro {
   &__text {
     padding-inline: rem(105);
-    margin-top: $padding-200;
-    margin-bottom: $padding-200;
+    margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
     font-weight: 100;
     &--less-margin {
       margin-bottom: rem(0);
@@ -87,7 +87,7 @@
     }
 
     .s-intro__text {
-      margin-top: rem(80);
+      margin-top: 12.5rem;
 
       @media (min-width: $lg) {
         margin-top: rem(100);
