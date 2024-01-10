@@ -1,7 +1,55 @@
 @font-face {
-  font-family: "D2Coding";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff") format("woff");
-  font-weight: normal;
+  font-family: "SUIT";
+  src: url("../../public/assets/fonts/SUIT-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUIT";
+  src: url("../../public/assets/fonts/SUIT-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUIT";
+  src: url("../../public/assets/fonts/SUIT-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUIT";
+  src: url("../../public/assets/fonts/SUIT-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUIT";
+  src: url("../../public/assets/fonts/SUIT-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUIT";
+  src: url("../../public/assets/fonts/SUIT-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUIT";
+  src: url("../../public/assets/fonts/SUIT-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUIT";
+  src: url("../../public/assets/fonts/SUIT-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUIT";
+  src: url("../../public/assets/fonts/SUIT-Heavy.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
 }
 /**
@@ -250,7 +298,7 @@ body {
 }
 
 html {
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   line-height: 1.6;
   color: #fff;
   background-color: #141414;
@@ -276,7 +324,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   line-height: 1.1;
   font-weight: 700;
 }
@@ -299,12 +347,12 @@ h4 {
 
 h5 {
   font-size: 1.5rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 
 h6 {
   font-size: 1.125rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 
 a {
@@ -357,7 +405,7 @@ button {
 }
 
 textarea {
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 
 main {
@@ -400,7 +448,7 @@ main {
 }
 
 .st-boldArrow {
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   line-height: 3.5625rem;
   transition: padding-left 0.32s ease-in-out;
   display: flex;
@@ -487,7 +535,7 @@ main {
 }
 .st-boldArrow--small {
   font-weight: 300;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   line-height: normal;
   font-size: 1.125rem;
 }
@@ -1756,7 +1804,7 @@ main {
   color: #fdf8f8;
 }
 .c-footer__heading {
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 .c-footer__address {
   font-style: normal;
@@ -1910,7 +1958,7 @@ main {
 }
 .c-main-logo__text {
   font-size: 0.75rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   line-height: 1;
   margin-left: 8.4px;
 }
@@ -1943,7 +1991,7 @@ main {
 .c-openText h1 {
   font-size: 1.125rem;
   font-weight: 300;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   margin-bottom: 0.5rem;
 }
 @media (max-width: 991px) {
@@ -1953,7 +2001,7 @@ main {
 }
 .c-openText__text {
   font-size: 4.5rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 .c-openText__text__small-padding {
   display: block;
@@ -2264,7 +2312,7 @@ main {
 .c-project2Sizes h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 .c-project2Sizes h2 a:hover {
   text-decoration: none;
@@ -2451,7 +2499,7 @@ main {
     font-size: 2rem;
     line-height: 2.5rem;
     margin-bottom: 0.5625rem;
-    font-family: "D2Coding", sans-serif;
+    font-family: "SUIT", sans-serif;
   }
 }
 .c-projectBox__heading p {
@@ -2850,7 +2898,7 @@ main {
   margin-bottom: 2rem;
 }
 .c-sectionHeading h2 {
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
 }
@@ -2955,7 +3003,7 @@ main {
   left: -2.5rem;
   font-size: 1.125rem;
   font-weight: 400;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   margin-bottom: 1.25rem;
 }
 @media (max-width: 1267px) {
@@ -3506,7 +3554,7 @@ main {
 }
 .banner-text .swiper-text {
   padding: 2.5px;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-size: 6.25rem;
   line-height: 1.1;
   color: #141414;
@@ -3550,7 +3598,7 @@ main {
   }
 }
 .s-benefits ul h3 {
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-weight: 700;
   font-size: 1.375rem;
   margin-top: 0.625rem;
@@ -3673,7 +3721,7 @@ main {
 }
 .s-blobs__heading {
   font-size: 4.5rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   transform: translate(0);
   position: relative;
   z-index: 10;
@@ -3808,7 +3856,7 @@ main {
 }
 .s-blobs__impossible {
   z-index: 3;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-size: 8vw;
   position: relative;
   text-align: center;
@@ -3836,7 +3884,7 @@ main {
 .s-blobs__done {
   z-index: 3;
   position: relative;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-size: 8vw;
   margin-top: -3.125rem;
   text-align: center;
@@ -5708,7 +5756,7 @@ textarea:focus {
   position: relative;
   display: inline-block;
   font-size: 4.5rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   margin-right: -4rem;
 }
 @media (max-width: 1199px) {
@@ -5889,7 +5937,7 @@ textarea:focus {
   top: -3.75rem;
   right: -4.0625rem;
   font-size: 4.5rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 @media (max-width: 1199px) {
   .hero-ar__superscript {
@@ -6145,7 +6193,7 @@ textarea:focus {
 .hero-image h3 {
   margin-bottom: -1.875rem;
   padding-right: 4.375rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-size: 0.9375rem;
   font-weight: 500;
   text-align: right;
@@ -6202,7 +6250,7 @@ textarea:focus {
   color: #000;
 }
 .hero-image__text__span {
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-size: 4.5rem;
   margin-top: -50px;
 }
@@ -6672,7 +6720,7 @@ textarea:focus {
   margin-left: 0.3125rem;
   border-radius: 1.75rem;
   font-size: 1rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-weight: 700;
 }
 
@@ -6863,7 +6911,7 @@ textarea:focus {
   text-transform: uppercase;
   padding-inline: 5rem;
   margin-inline: 0;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-size: 1.5rem;
   color: #43180b;
 }
@@ -7472,7 +7520,7 @@ textarea:focus {
   margin-left: 0;
   padding: 0.625rem 4.6875rem;
   background-color: #27346e;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 .nesquik__img {
   margin-left: auto;
@@ -9850,7 +9898,7 @@ textarea:focus {
   font-weight: bold;
   margin-top: 0.625rem;
   padding-left: 0.125rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 .s-numered-cols__grid__element p {
   margin-top: 0.75rem;
@@ -10263,7 +10311,7 @@ textarea:focus {
   text-align: center;
   margin-top: 7.5rem;
   font-size: 3.75rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 @media (max-width: 991px) {
   .s-pictureInformation--ar .s-pictureInformation__footer {
@@ -11471,7 +11519,7 @@ textarea:focus {
   font-size: 4.5rem;
   margin-bottom: 7rem;
   display: inline-block;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 .private-policy h2 {
   font-size: 1.375rem;
@@ -11678,7 +11726,7 @@ textarea:focus {
   }
 }
 .s-project__list__wrapper ul {
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   width: 50%;
 }
 @media (max-width: 991px) {
@@ -11985,7 +12033,7 @@ a:hover a :before {
   top: -120px;
   right: -20px;
   font-size: 6.5rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   z-index: -1;
 }
 @media (max-width: 991px) {
@@ -12007,7 +12055,7 @@ a:hover a :before {
   top: -120px;
   left: -20%;
   font-size: 6.5rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   z-index: -1;
 }
 @media (max-width: 991px) {
@@ -12074,7 +12122,7 @@ a:hover a :before {
   position: absolute;
   top: 1.5625rem;
   left: 1.5625rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-size: 2rem;
   line-height: 1;
   -webkit-text-stroke: 1px #fffdf8;
@@ -12098,7 +12146,7 @@ a:hover a :before {
   }
 }
 .tiles__body__span {
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   margin-bottom: 1rem;
   display: block;
 }
@@ -12330,7 +12378,7 @@ a:hover a :before {
   padding-inline: 7.8125rem;
   width: 100%;
   font-size: 4.5rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
 }
 @media (min-width: 991px) {
   .s-typingText__wrapper {
@@ -12818,7 +12866,7 @@ a:hover a :before {
 }
 .s-work__menu h1 {
   font-size: 1.125rem;
-  font-family: "D2Coding", sans-serif;
+  font-family: "SUIT", sans-serif;
   font-weight: 300;
   margin: auto 0;
 }
