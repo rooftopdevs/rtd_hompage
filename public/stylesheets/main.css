@@ -370,20 +370,6 @@ main {
   }
 }
 
-.l-p-block {
-  padding-block: 6.875rem;
-}
-@media (max-width: 991px) {
-  .l-p-block {
-    padding-block: 5rem;
-  }
-}
-@media (max-width: 767px) {
-  .l-p-block {
-    padding-block: 3.75rem;
-  }
-}
-
 .l-container {
   width: 100%;
   max-width: 1230px;
@@ -402,6 +388,20 @@ main {
 @media (max-width: 767px) {
   .l-container {
     max-width: 575px;
+  }
+}
+
+.l-p-block {
+  padding-block: 6.875rem;
+}
+@media (max-width: 991px) {
+  .l-p-block {
+    padding-block: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .l-p-block {
+    padding-block: 3.75rem;
   }
 }
 
@@ -1031,21 +1031,10 @@ main {
 @media (max-width: 991px) {
   .nav__services__col {
     display: flex;
-    height: 220px;
     flex-direction: column;
     flex-wrap: wrap;
     grid-template-columns: repeat(2, 1fr);
     width: 50%;
-  }
-}
-@media (max-width: 575px) {
-  .nav__services__col {
-    height: 245px;
-  }
-}
-@media (max-width: 410px) {
-  .nav__services__col {
-    height: 270px;
   }
 }
 @media (max-width: 374px) {
@@ -2257,7 +2246,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding-right: 6.25rem;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 @media (max-width: 991px) {
   .c-project2Sizes {
@@ -6294,7 +6283,7 @@ textarea:focus {
   animation-fill-mode: forwards;
 }
 .s-hero h1:not(.video__header)::after {
-  content: "Impossible.";
+  content: "RTD.";
   position: absolute;
   color: #fff;
   right: 0;
@@ -12902,7 +12891,7 @@ select {
 }
 
 .s-work__ecommerce .c-project2Sizes {
-  margin-bottom: 6.25rem;
+  margin-bottom: 10rem;
 }
 @media (min-width: 991px) {
   .s-work__ecommerce .c-project2Sizes {
@@ -12920,7 +12909,7 @@ select {
   margin-top: 50px;
 }
 .s-work--d-agency .c-project2Sizes {
-  margin-bottom: 6.25rem;
+  margin-bottom: 10rem;
 }
 @media (min-width: 991px) {
   .s-work--d-agency .c-project2Sizes {
@@ -13080,7 +13069,7 @@ select {
 }
 .js .st-boldUnderline__changeColor:after,
 .js .st-boldUnderline__changeColor2:after {
-  content: "Impossible. Done.";
+  content: "Rooftop Developers.";
   position: absolute;
   width: 100%;
   height: 100%;

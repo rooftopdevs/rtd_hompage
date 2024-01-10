@@ -219,17 +219,14 @@
         margin-top: rem(10);
         @media (max-width: $lg) {
           display: flex;
-          height: 220px;
           flex-direction: column;
           flex-wrap: wrap;
           grid-template-columns: repeat(2, 1fr);
           width: 50%;
         }
         @media (max-width: $sm) {
-          height: 245px;
         }
         @media (max-width: 410px) {
-          height: 270px;
         }
         @media (max-width: $xs) {
           height: auto;

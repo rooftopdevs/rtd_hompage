@@ -1,463 +1,591 @@
 <!DOCTYPE html>
 <html lang="ko" class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        
-        <title>옥탑방개발자들</title>
-        
-        <link rel="icon" type="image/png" sizes="192x192" href="public/assets/android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="public/assets/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="public/assets/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="public/assets/favicon-16x16.png">
 
-        <link rel="stylesheet" href="https://use.typekit.net/anh6qsb.css">
-        <link rel="stylesheet" href="public/stylesheets/main.css">
-        <link rel="stylesheet" href="public/stylesheets/swiper.css">
-        <script>
-            document.documentElement.className = "js";
-        </script>
-    </head>
-    <body>
-        <header class="c-header">
-            <div class="c-header__container">
-                <a class="c-main-logo" href="/">
-                    <img width="35" height="35" src="public/assets/android-chrome-192x192.png" alt="RTD logo">
-                    <p class="c-main-logo__text">
-                        Rooftop<br>
-                        Developers
-                    </p>
-                </a>
-                <div class="c-header__wrapper">
-                    <address class="c-header__contact">
-                        <a href="mailto:thkim@youngilvision.com">thkim@youngilvision.com</a>
-                        | <a href="tel:07045788901" data-phones="070 4578 8901">070 4578 8901</a>
-                        <a class="c-header__contact--cta open-menu-contact" href="javascript:void(0)">Contact us</a>
-                    </address>
-                    <div class="c-header__hamburger">
-                        <div class="c-header__hamburger__lines"></div>
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>옥탑방개발자들</title>
+
+    <link rel="icon" type="image/png" sizes="192x192" href="public/assets/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="public/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/assets/favicon-16x16.png">
+
+    <link rel="stylesheet" href="https://use.typekit.net/anh6qsb.css">
+    <link rel="stylesheet" href="public/stylesheets/main.css">
+    <link rel="stylesheet" href="public/stylesheets/swiper.css">
+    <script>
+        document.documentElement.className = "js";
+    </script>
+</head>
+
+<body>
+    <header class="c-header">
+        <div class="c-header__container">
+            <a class="c-main-logo" href="/">
+                <img width="35" height="35" src="public/assets/android-chrome-192x192.png" alt="RTD logo">
+                <p class="c-main-logo__text">
+                    Rooftop<br>
+                    Developers
+                </p>
+            </a>
+            <div class="c-header__wrapper">
+                <address class="c-header__contact">
+                    <a href="mailto:thkim@youngilvision.com">thkim@youngilvision.com</a>
+                    | <a href="tel:07045788901" data-phones="070 4578 8901">070 4578 8901</a>
+                    <a class="c-header__contact--cta open-menu-contact" href="javascript:void(0)">문의하기</a>
+                </address>
+                <div class="c-header__hamburger">
+                    <div class="c-header__hamburger__lines"></div>
                 </div>
             </div>
-            <nav class="nav">
-                <div class="nav__wrapper">
-                    <ul class="nav__wrapper__left">
+        </div>
+        <nav class="nav">
+            <div class="nav__wrapper">
+                <ul class="nav__wrapper__left">
+                    <li>
+                        <a href="about.html" class="menuFZ st-boldArrow">RTD</a>
+                    </li>
+                    <li>
+                        <a href="work.html" class="menuFZ st-boldArrow">포트폴리오</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="menuFZ st-boldArrow" data-index="services">서비스</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="menuFZ st-boldArrow" data-index="contact">문의하기</a>
+                    </li>
+                </ul>
+                <section class="s-contact s-contact__header">
+                    <div class="l-container s-contact__header__boxes">
+                        <div class="js-contact js-contact-on-menu">
+                            <div class="InputBox">
+                                <div class="c-box c-box__menu InputWrapper">
+                                    <h2>Let’s talk</h2>
+                                    <p>
+                                        여러분의 모바일, 웹 기반의 디지털 프로덕트에 대해 이야기 하시고 싶으신가요?<br>
+                                        <a href="tel:07045788901" data-strong="1" data-phones="070 4578 8901">070 4578
+                                            8901</a> 로 전화해주세요
+                                        또는 폼을 작성해주세요
+                                    </p>
+                                    <div class="div-step">
+                                        <a href="javascript:void(0)" class="btn-step c-btn revColors">
+                                            Get in contact <div class="arrow arrowDark"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="js-contact-form" action="sendmail.php" method="post" onsubmit="return false">
+                                <div class="s-contact__wrapper">
+                                    <div class="c-box send-success">
+                                        <h2>Thank you</h2>
+                                        <p>RTD가 빠르게 메일을 회신드릴께요! 이메일을 수시로 확인해주세요</p>
+                                    </div>
+                                    <div class="s-contact__group">
+                                        <div class="InputBox">
+                                            <p class="InputBox-heading">성함을 작성해주세요</p>
+                                            <div class="InputWrapper">
+                                                <input class="Input test" type="text" id="menu-form-name"
+                                                    placeholder="&nbsp;" name="name" required>
+                                                <label for="menu-form-name"
+                                                    class="InputLabel InputLabel--mobile">이름</label>
+                                                <div class="input-invalid">Invalid form value</div>
+                                                <div class="div-step">
+                                                    <a href="javascript:void(0)" class="btn-step c-btn revColors">
+                                                        OK <div class="arrow arrowDark"></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="InputBox">
+                                            <p class="InputBox-heading">이메일을 작성해주세요</p>
+                                            <div class="InputWrapper">
+                                                <input class="Input tryingunput" type="email" id="menu-form-email"
+                                                    pattern="[^@]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="&nbsp;"
+                                                    name="email" required>
+                                                <label for="menu-form-email"
+                                                    class="InputLabel InputLabel--mobile">이메일*</label>
+                                                <div class="input-invalid">Invalid form value</div>
+                                                <div class="div-step">
+                                                    <a href="javascript:void(0)" class="btn-step c-btn revColors">
+                                                        OK <div class="arrow arrowDark"></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="InputBox">
+                                            <p class="InputBox-heading">회사명을 작성해주세요</p>
+                                            <div class="InputWrapper">
+                                                <input class="Input" type="text" id="menu-form-company" name="company"
+                                                    placeholder="&nbsp;" required>
+                                                <label for="menu-form-company"
+                                                    class="InputLabel InputLabel--mobile">회사명</label>
+                                                <div class="input-invalid">Invalid form value</div>
+                                                <div class="div-step">
+                                                    <a href="javascript:void(0)" class="btn-step c-btn revColors">
+                                                        OK <div class="arrow arrowDark"></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s-contact__group">
+                                        <div class="InputBox">
+                                            <p class="InputBox-heading">얘기하시고 싶은 프로젝트에 대해 말해주세요</p>
+                                            <div class="InputWrapper">
+                                                <textarea class="Input textarea" name="help-message"
+                                                    placeholder="&nbsp;" required></textarea>
+                                                <label class="textareaLabel">얘기하시고 싶은 프로젝트에 대해 말해주세요</label>
+                                                <div class="input-invalid">Invalid form value</div>
+                                                <div class="c-btn__button">
+                                                    <button class="c-btn revColors submiter" type="submit">
+                                                        Send <span class="arrow arrowDark"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="| js-response-output s-contact__response-output" aria-hidden="true"></div>
+                            </form>
+                        </div>
+                        <div class="after-form-submit hidden">
+                            <h2>Thank you</h2>
+                            <p>RTD가 빠르게 메일을 회신드릴께요! 이메일을 수시로 확인해주세요</p>
+                        </div>
+                        <div class="nav__footer nav__footer--contact">
+                            <div class="nav__footer__adress">
+                                <a href="mailto:thkim@youngilvision.com">thkim@youngilvision.com</a>
+                                <a href="tel:07045788901" data-phones="070 4578 8901">070 4578 8901</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="nav__services">
+                    <ul>
                         <li>
-                            <a href="about.html" class="menuFZ st-boldArrow">RTD</a>
+                            <span>
+                                <a href="digital-product-development.html" class="st-boldArrow st-boldArrow--big">디지털
+                                    프로덕트 개발</a>
+                            </span>
+                            <ul class="nav__services__col">
+                                <li>
+                                    <a href="mobile-app-develop.html" class="st-boldArrow st-boldArrow--small">모바일 앱
+                                        개발</a>
+                                </li>
+                                <li>
+                                    <a href="web-develop.html" class="st-boldArrow st-boldArrow--small">웹 사이트 개발</a>
+                                </li>
+                                <li>
+                                    <a href="ui-ux-design.html" class="st-boldArrow st-boldArrow--small">UI/UX 디자인</a>
+                                </li>
+                                <li>
+                                    <a href="planing-service.html" class="st-boldArrow st-boldArrow--small">서비스 기획</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="work.html" class="menuFZ st-boldArrow">포트폴리오</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="menuFZ st-boldArrow" data-index="services">서비스</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="menuFZ st-boldArrow" data-index="contact">문의하기</a>
-                        </li>
+                        <!-- <li>
+                            <span>
+                                <a href="#" class="st-boldArrow st-boldArrow--big">More</a>
+                            </span>
+                            <ul class="nav__services__col nav__services__col--last">
+                                <li class="nav__services__col--padding">
+                                    <a href="#" class="st-boldArrow st-boldArrow--small">
+                                        RTD는 더 많은 서비스를 <br>제공하기 위해 <br> 노력하고 있습니다
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> -->
                     </ul>
-                    <section class="s-contact s-contact__header">
-                        <div class="l-container s-contact__header__boxes">
-                            <div class="js-contact js-contact-on-menu">
+                </div>
+            </div>
+            <div class="nav__footer">
+                <div class="nav__footer__adress">
+                    <a href="mailto:thkim@youngilvision.com">thkim@youngilvision.com</a>
+                    <a href="tel:07045788901" data-phones="070 4578 8901">070 4578 8901</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="s-hero">
+            <div class="s-hero__bg">
+                <div class="l-container s-hero__relative">
+                    <div class="s-hero__bg--1">
+                        <img src="public/assets/redGradient.svg" width="2857" height="1633" alt>
+                    </div>
+                    <div class="s-hero__bg--2">
+                        <img src="public/assets/pinkGradient.svg" width="1574" height="2696" alt>
+                    </div>
+                    <div class="s-hero__bg--4">
+                        <img src="public/assets/whiteGradient.svg" width="2421" height="2226" alt>
+                    </div>
+                </div>
+                <div class="s-hero__bg--texture"></div>
+            </div>
+            <div class="s-hero__wrapper">
+                <h1 class="st-outline">
+                    <span>Rooftop Developers.</span>
+                </h1>
+                <div class="s-hero__done">
+                    <img src="public/assets/hero-done.svg" width="301" height="90" alt="Done text">
+                </div>
+                <div class="heroArrow">
+                    <svg width="84" height="88" viewbox="0 0 84 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M45.88 52.4001H5V35.2001H45.88H48.3061L46.5847 33.4905L29.8967 16.9176L40.84 5.97427L78.6658 43.8001L40.84 81.6258L29.8967 70.6825L46.5847 54.1096L48.3061 52.4001H45.88Z"
+                            stroke="white" stroke-width="2"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="little-arrow">
+                <svg width="29" height="28" viewbox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M27.4166 13.6249L14.5727 26.273L1.72881 13.6249L4.79573 10.6047L10.3777 16.1397L12.0818 17.8295L12.0818 15.4297L12.0818 1.43262L17.0636 1.43262L17.0636 15.4297L17.0636 17.8295L18.7677 16.1397L24.3497 10.6047L27.4166 13.6249Z"
+                        stroke="#FDF8F8" stroke-width="2"></path>
+                </svg>
+            </div>
+        </section>
+        <section class="l-container s-intro">
+            <div class="| fade-up2 js-fade-up2 s-intro__text">
+                <p class="c-text">
+                    비즈니스 전반에 걸친 역량을 갖춘 최고의 파트너사를 찾는다면
+                    <br /> 시장검증, 프로덕트 개발, 마케팅까지 전부 내재화된 인력으로,
+                    단순한 아웃소싱이 아닌 비즈니스 파트너로서 함께 합니다.<span class="js-underlineAnimation st-boldUnderline">Rooftop Developers.</span>
+                </p>
+            </div>
+        </section>
+        <section class="l-container s-numered-cols">
+            <h2 class="| heading heading-hidden js-heading st-outline st-outline--gradient st-scaleHeading transition-2">프로세스 </h2>
+            <p class="s-numered-cols__p">
+                완성도 있는 프로덕트를 위해 기획 단계부터 개발까지 <br>
+                구성원간의 커뮤니케이션을 중요하게 생각합니다.
+            </p>
+            <div class="s-numered-cols__grid">
+                <div class="js-step s-numered-cols__grid__element">
+                    <span>01.</span>
+                    <h3>프로젝트 팀 구축 및 킥오프</h3>
+                    <p>비즈니스 관점에서 제품의 목표를 설정하고 클라이언트와 팀 전체가 함께 공유합니다.</p>
+                </div>
+                <div class="js-step s-numered-cols__grid__element">
+                    <span>02.</span>
+                    <h3>프로젝트 진행 & 회의 및 문서화</h3>
+                    <p>기능 및 사용자 관점에서 생각하며 더 나은 방향을 찾는 커뮤니케이션을 합니다.</p>
+                </div>
+                <div class="js-step s-numered-cols__grid__element">
+                    <span>03.</span>
+                    <h3>기능별 QA 진행</h3>
+                    <p>기획, 디자인, 사용자 경험에 기반한 기능 단위별 프로젝트 QA를 진행합니다.</p>
+                </div>
+            </div>
+        </section>
+        <section class="l-container s-work">
+            <h2 class="| heading heading-hidden js-heading st-outline st-outline--semitransparent st-scaleHeading transition-2" style="margin-bottom: 6.25rem;">포트폴리오 </h2>
+            <div class="s-work__menu">
+                <div class="| fade-left js-fade-left s-work__menu__options transition-2">
+                    <a href="javascript:void(0)" class="active c-btn c-btn--nmw s-work-btn" data-category="all">All</a>
+                    <a href="javascript:void(0)" class="c-btn c-btn--nmw s-work-btn" data-category="mobile">모바일 앱 개발</a>
+                    <a href="javascript:void(0)" class="c-btn c-btn--nmw s-work-btn" data-category="web">웹 사이트 개발</a>
+                </div>
+            </div>
+            <select id="work" name="work" class="s-work__select">
+                <option value="all">All</option>
+                <option value="mobile">모바일 앱 개발</option>
+                <option value="web">웹 사이트 개발</option>
+            </select>
+            <div class="c-project2Sizes transition-2" data-type="portfolio">
+                <div class="| c-project2Sizes--big c-projectBox__item fade-up js-fade-up" data-category="mobile">
+                    <div class="c-project2Sizes__img">
+                        <img src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" alt="Dummy image">
+                    </div>
+                    <div class="c-project2Sizes__logo">
+                        <h2>
+                            <a href="coca-cola.html">프로젝트명 1</a>
+                        </h2>    
+                    </div>
+                    <a href="coca-cola.html" class="c-btn">
+                        프로젝트 보기 <div class="arrow"></div>
+                    </a>
+                </div>
+                <div class="| c-project2Sizes--small c-projectBox__item fade-up js-fade-up" data-category="mobile">
+                    <div class="c-project2Sizes__img c-project2Sizes__img--small">
+                        <picture>
+                            <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
+                            <img width="740" height="660" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="Dummy image">
+                        </picture>
+                    </div>
+                    <div class="c-project2Sizes__logo">
+                        <h2>
+                            <a href="for-babys-sake.html">프로젝트명 2</a>
+                        </h2>
+                    </div>
+                    <a href="for-babys-sake.html" class="c-btn">
+                        프로젝트 보기 <div class="arrow"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="c-project2Sizes transition-2" data-type="portfolio">
+                <div class="| c-project2Sizes--big c-projectBox__item fade-up js-fade-up" data-category="web">
+                    <div class="c-project2Sizes__img">
+                        <img src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" alt="Dummy image">
+                    </div>
+                    <div class="c-project2Sizes__logo">
+                        <h2>
+                            <a href="coca-cola.html">프로젝트명 1</a>
+                        </h2>    
+                    </div>
+                    <a href="coca-cola.html" class="c-btn">
+                        프로젝트 보기 <div class="arrow"></div>
+                    </a>
+                </div>
+                <div class="| c-project2Sizes--small c-projectBox__item fade-up js-fade-up" data-category="web">
+                    <div class="c-project2Sizes__img c-project2Sizes__img--small">
+                        <picture>
+                            <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
+                            <img width="740" height="660" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="Dummy image">
+                        </picture>
+                    </div>
+                    <div class="c-project2Sizes__logo">
+                        <h2>
+                            <a href="for-babys-sake.html">프로젝트명 2</a>
+                        </h2>
+                    </div>
+                    <a href="for-babys-sake.html" class="c-btn">
+                        프로젝트 보기 <div class="arrow"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="l-container s-cta-grid section-space--240">
+            <div class="| c-cta fade-up js-fade-up s-cta-grid__heading">
+                <h2>파트너사</h2>
+                <a href="javascript:void(0)" class="c-btn c-header__contact--cta open-menu-contact">
+                    Work with us <div class="arrow"></div>
+                </a>
+            </div>
+            <div class="| fade-up2 js-fade-up2 s-cta-grid__grid">
+                <picture>
+                    <source srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" type="image/png">
+                    <img class="logo__1" width="103" height="89" src="public/assets/dummy_logo.webp"
+                        srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" loading="lazy"
+                        alt="McDonald's logo">
+                </picture>
+                <picture>
+                    <source srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" type="image/png">
+                    <img class="logo__2" width="103" height="89" src="public/assets/dummy_logo.webp"
+                        srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" loading="lazy"
+                        alt="McDonald's logo">
+                </picture>
+                <picture>
+                    <source srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" type="image/png">
+                    <img class="logo__3" width="103" height="89" src="public/assets/dummy_logo.webp"
+                        srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" loading="lazy"
+                        alt="McDonald's logo">
+                </picture>
+                <picture>
+                    <source srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" type="image/png">
+                    <img class="logo__4" width="103" height="89" src="public/assets/dummy_logo.webp"
+                        srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" loading="lazy"
+                        alt="McDonald's logo">
+                </picture>
+                <picture>
+                    <source srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" type="image/png">
+                    <img class="logo__5" width="103" height="89" src="public/assets/dummy_logo.webp"
+                        srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" loading="lazy"
+                        alt="McDonald's logo">
+                </picture>
+                <picture>
+                    <source srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" type="image/png">
+                    <img class="logo__6" width="103" height="89" src="public/assets/dummy_logo.webp"
+                        srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" loading="lazy"
+                        alt="McDonald's logo">
+                </picture>
+                <picture>
+                    <source srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" type="image/png">
+                    <img class="logo__7" width="103" height="89" src="public/assets/dummy_logo.webp"
+                        srcset="public/assets/dummy_logo.webp 2x, public/assets/dummy_logo.webp 3x" loading="lazy"
+                        alt="McDonald's logo">
+                </picture>
+            </div>
+        </section>
+        <section id="contact" class="s-contact">
+            <div class="l-container s-contact__box">
+                <div class="contact__bg contact__bg--1">
+                    <picture>
+                        <source srcset="public/assets/contact-bg-main-1.webp" type="image/webp">
+                        <img width="2777" height="1553" src="public/assets/contact-bg-main-1.webp" alt="" loading="lazy">
+                    </picture>
+                </div>
+                <div class="contact__bg contact__bg--2">
+                    <picture>
+                        <source srcset="public/assets/contact-bg-main-2.webp" type="image/webp">
+                        <img width="2611" height="1588" src="public/assets/contact-bg-main-2.webp" alt="" loading="lazy">
+                    </picture>
+                </div>
+                <div class="contact__bg contact__bg--3">
+                    <picture>
+                        <source srcset="public/assets/contact-bg-main-3.webp" type="image/webp">
+                        <img width="2611" height="1588" src="public/assets/contact-bg-main-3.webp" alt="" loading="lazy">
+                    </picture>
+                </div>
+                <div class="js-contact">
+                    <div class="InputBox">
+                        <div class="c-box InputWrapper">
+                            <h2>Let’s talk</h2>
+                            <p>
+                                여러분의 모바일, 웹 기반의 디지털 프로덕트에 대해 이야기 하시고 싶으신가요?<br>
+                                <a href="tel:07045788901" data-strong="1" data-phones="070 4578 8901">070 4578
+                                    8901</a> 로 전화해주세요
+                                또는 폼을 작성해주세요
+                            </p>
+                            <div class="div-step"> <a href="javascript:void(0)" class="btn-step c-btn revColors">Get in
+                                    contact <div class="arrow arrowDark"></div> </a> </div>
+                        </div>
+                    </div>
+                    <form class="js-contact-form" action="sendmail.php" method="post">
+                        <div class="s-contact__wrapper">
+                            <div class="c-box send-success">
+                                <h2>Thank you</h2>
+                                <p>RTD가 빠르게 메일을 회신드릴께요! 이메일을 수시로 확인해주세요</p>
+                            </div>
+                            <div class="s-contact__group">
                                 <div class="InputBox">
-                                    <div class="c-box c-box__menu InputWrapper">
-                                        <h2>Let’s talk</h2>
-                                        <p>
-                                            여러분의 모바일, 웹 기반의 디지털 프로덕트에 대해 이야기 하시고 싶으신가요?<br>
-                                            <a href="tel:07045788901" data-strong="1" data-phones="070 4578 8901">070 4578 8901</a> 로 전화해주세요
-                                            또는 하단의 폼을 작성해주세요
-                                        </p>
+                                    <p class="InputBox-heading">성함을 작성해주세요</p>
+                                    <div class="InputWrapper">
+                                        <input class="Input test" type="text" id="menu-form-name"
+                                            placeholder="&nbsp;" name="name" required>
+                                        <label for="menu-form-name"
+                                            class="InputLabel InputLabel--mobile">이름</label>
+                                        <div class="input-invalid">Invalid form value</div>
                                         <div class="div-step">
                                             <a href="javascript:void(0)" class="btn-step c-btn revColors">
-                                                Get in contact <div class="arrow arrowDark"></div>
+                                                OK <div class="arrow arrowDark"></div>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <form class="js-contact-form" action="sendmail.php" method="post" onsubmit="return false">
-                                    <div class="s-contact__wrapper">
-                                        <div class="c-box send-success">
-                                            <h2>Thank you</h2>
-                                            <p>RTD가 빠르게 메일을 회신드릴께요! 이메일을 수시로 확인해주세요</p>
-                                        </div>
-                                        <div class="s-contact__group">
-                                            <div class="InputBox">
-                                                <p class="InputBox-heading">성함을 작성해주세요</p>
-                                                <div class="InputWrapper">
-                                                    <input class="Input test" type="text" id="menu-form-name" placeholder="&nbsp;" name="name" required>
-                                                    <label for="menu-form-name" class="InputLabel InputLabel--mobile">이름</label>
-                                                    <div class="input-invalid">Invalid form value</div>
-                                                    <div class="div-step">
-                                                        <a href="javascript:void(0)" class="btn-step c-btn revColors">
-                                                            OK <div class="arrow arrowDark"></div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="InputBox">
-                                                <p class="InputBox-heading">이메일을 작성해주세요</p>
-                                                <div class="InputWrapper">
-                                                    <input class="Input tryingunput" type="email" id="menu-form-email" pattern="[^@]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="&nbsp;" name="email" required>
-                                                    <label for="menu-form-email" class="InputLabel InputLabel--mobile">이메일*</label>
-                                                    <div class="input-invalid">Invalid form value</div>
-                                                    <div class="div-step">
-                                                        <a href="javascript:void(0)" class="btn-step c-btn revColors">
-                                                            OK <div class="arrow arrowDark"></div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="InputBox">
-                                                <p class="InputBox-heading">회사명을 작성해주세요</p>
-                                                <div class="InputWrapper">
-                                                    <input class="Input" type="text" id="menu-form-company" name="company" placeholder="&nbsp;" required>
-                                                    <label for="menu-form-company" class="InputLabel InputLabel--mobile">회사명</label>
-                                                    <div class="input-invalid">Invalid form value</div>
-                                                    <div class="div-step">
-                                                        <a href="javascript:void(0)" class="btn-step c-btn revColors">
-                                                            OK <div class="arrow arrowDark"></div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="s-contact__group">
-                                            <div class="InputBox">
-                                                <p class="InputBox-heading">얘기하시고 싶은 프로젝트에 대해 말해주세요</p>
-                                                <div class="InputWrapper">
-                                                    <textarea class="Input textarea" name="help-message" placeholder="&nbsp;" required></textarea>
-                                                    <label class="textareaLabel">얘기하시고 싶은 프로젝트에 대해 말해주세요</label>
-                                                    <div class="input-invalid">Invalid form value</div>
-                                                    <div class="c-btn__button">
-                                                        <button class="c-btn revColors submiter" type="submit">
-                                                            Send <span class="arrow arrowDark"></span>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="InputBox">
+                                    <p class="InputBox-heading">이메일을 작성해주세요</p>
+                                    <div class="InputWrapper">
+                                        <input class="Input tryingunput" type="email" id="menu-form-email"
+                                            pattern="[^@]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="&nbsp;"
+                                            name="email" required>
+                                        <label for="menu-form-email"
+                                            class="InputLabel InputLabel--mobile">이메일*</label>
+                                        <div class="input-invalid">Invalid form value</div>
+                                        <div class="div-step">
+                                            <a href="javascript:void(0)" class="btn-step c-btn revColors">
+                                                OK <div class="arrow arrowDark"></div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="| js-response-output s-contact__response-output" aria-hidden="true"></div>
-                                </form>
+                                </div>
+                                <div class="InputBox">
+                                    <p class="InputBox-heading">회사명을 작성해주세요</p>
+                                    <div class="InputWrapper">
+                                        <input class="Input" type="text" id="menu-form-company" name="company"
+                                            placeholder="&nbsp;" required>
+                                        <label for="menu-form-company"
+                                            class="InputLabel InputLabel--mobile">회사명</label>
+                                        <div class="input-invalid">Invalid form value</div>
+                                        <div class="div-step">
+                                            <a href="javascript:void(0)" class="btn-step c-btn revColors">
+                                                OK <div class="arrow arrowDark"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="after-form-submit hidden">
-                                <h2>Thank you</h2>
-                                <p>RTD가 빠르게 메일을 회신드릴께요! 이메일을 수시로 확인해주세요</p>
-                            </div>
-                            <div class="nav__footer nav__footer--contact">
-                                <div class="nav__footer__adress">
-                                    <a href="mailto:thkim@youngilvision.com">thkim@youngilvision.com</a>
-                                    <a href="tel:07045788901" data-phones="070 4578 8901">070 4578 8901</a>
+                            <div class="s-contact__group">
+                                <div class="InputBox">
+                                    <p class="InputBox-heading">얘기하시고 싶은 프로젝트에 대해 말해주세요</p>
+                                    <div class="InputWrapper">
+                                        <textarea class="Input textarea" name="help-message"
+                                            placeholder="&nbsp;" required></textarea>
+                                        <label class="textareaLabel">얘기하시고 싶은 프로젝트에 대해 말해주세요</label>
+                                        <div class="input-invalid">Invalid form value</div>
+                                        <div class="c-btn__button">
+                                            <button class="c-btn revColors submiter" type="submit">
+                                                Send <span class="arrow arrowDark"></span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <div class="nav__services">
-                        <ul>
-                            <li>
-                                <span>
-                                    <a href="digital-product-development.html" class="st-boldArrow st-boldArrow--big">디지털 프로덕트 개발</a>
-                                </span>
-                                <ul class="nav__services__col">
-                                    <li>
-                                        <a href="mobile-app-develop.html" class="st-boldArrow st-boldArrow--small">모바일 앱 개발</a>
-                                    </li>
-                                    <li>
-                                        <a href="web-develop.html" class="st-boldArrow st-boldArrow--small">웹 사이트 개발</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-ux-design.html" class="st-boldArrow st-boldArrow--small">UI/UX 디자인</a>
-                                    </li>
-                                    <li>
-                                        <a href="planing-service.html" class="st-boldArrow st-boldArrow--small">서비스 기획</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span>
-                                    <a href="#" class="st-boldArrow st-boldArrow--big">More</a>
-                                </span>
-                                <ul class="nav__services__col nav__services__col--last">
-                                    <li class="nav__services__col--padding">
-                                        <a href="#" class="st-boldArrow st-boldArrow--small">
-                                            RTD는 더 많은 서비스를 <br>제공하기 위해 <br> 노력하고 있습니다
-                                        </a>
-                                    </li>
-                                    <!-- <li class="nav__services__col--padding">
-                                        <a href="internal-communications.html" class="st-boldArrow st-boldArrow--small">
-                                            Internal communications <br>agency
-                                        </a>
-                                    </li>
-                                    <li class="nav__services__col--padding">
-                                        <a href="google-analytics.html" class="st-boldArrow st-boldArrow--small">
-                                            Google analytics <br>GA4 migration
-                                        </a>
-                                    </li> -->
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="nav__footer">
-                    <div class="nav__footer__adress">
-                        <a href="mailto:thkim@youngilvision.com">thkim@youngilvision.com</a>
-                        <a href="tel:07045788901" data-phones="070 4578 8901">070 4578 8901</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="s-hero">
-                <div class="s-hero__bg">
-                    <div class="l-container s-hero__relative">
-                        <div class="s-hero__bg--1">
-                            <img src="public/assets/redGradient.svg" width="2857" height="1633" alt>
-                        </div>
-                        <div class="s-hero__bg--2">
-                            <img src="public/assets/pinkGradient.svg" width="1574" height="2696" alt>
-                        </div>
-                        <div class="s-hero__bg--4">
-                            <img src="public/assets/whiteGradient.svg" width="2421" height="2226" alt>
-                        </div>
-                    </div>
-                    <div class="s-hero__bg--texture"></div>
-                </div>
-                <div class="s-hero__wrapper">
-                    <h1 class="st-outline">
-                        <span>Impossible.</span>
-                    </h1>
-                    <div class="s-hero__done">
-                        <img src="public/assets/hero-done.svg" width="301" height="90" alt="Done text">
-                    </div>
-                    <div class="heroArrow">
-                        <svg width="84" height="88" viewbox="0 0 84 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M45.88 52.4001H5V35.2001H45.88H48.3061L46.5847 33.4905L29.8967 16.9176L40.84 5.97427L78.6658 43.8001L40.84 81.6258L29.8967 70.6825L46.5847 54.1096L48.3061 52.4001H45.88Z" stroke="white" stroke-width="2"></path>
-                        </svg>
-                    </div>
-                </div>
-                <div class="little-arrow">
-                    <svg width="29" height="28" viewbox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M27.4166 13.6249L14.5727 26.273L1.72881 13.6249L4.79573 10.6047L10.3777 16.1397L12.0818 17.8295L12.0818 15.4297L12.0818 1.43262L17.0636 1.43262L17.0636 15.4297L17.0636 17.8295L18.7677 16.1397L24.3497 10.6047L27.4166 13.6249Z" stroke="#FDF8F8" stroke-width="2"></path>
-                    </svg>
-                </div>
-            </section>
-            <section class="l-container s-intro">
-                <div class="| fade-up2 js-fade-up2 s-intro__text">
-                    <p class="c-text">
-                        저희는 임팩트가 높은 디자인과 기술 프로젝트를 전문으로 하는 크리에이티브 디지털 에이전시 플립사이드입니다. 저희는 기술의 혁신적인 힘에 대해 설교하지 않고, 그것을 현실로 만듭니다. <span class="js-underlineAnimation st-boldUnderline">Impossible. Done.</span>
-                    </p>
-                </div>
-            </section>
-            <div class="mb-30 mt-160 s-feature">
-                <div class="js-feature-slider swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <p>
-                                <img src="public/assets/dummy.png" width="672" height="90" alt="What we do text">
-                            </p>
-                        </div>
-                        <div class="swiper-slide">
-                            <p>
-                                <img src="public/assets/dummy.png" width="672" height="90" alt="What we do text">
-                            </p>
-                        </div>
-                    </div>
+                        <div class="| js-response-output s-contact__response-output" aria-hidden="true"></div>
+                    </form>
                 </div>
             </div>
-            <section class="l-container s-numered-cols">
-                <h2 class="| heading heading-hidden js-heading st-outline st-outline--gradient st-scaleHeading transition-2">What we do </h2>
-                <p class="s-numered-cols__p">RTD 에서는 사람과 기업 모두의 삶을 개선하는 도구, 경험 및 캠페인을 구축합니다. </p>
-                <div class="s-numered-cols__grid">
-                    <div class="js-step s-numered-cols__grid__element">
-                        <span>01.</span>
-                        <h3>디지털 전환</h3>
-                        <p>어쩌구 저쩌구</p>
-                    </div>
-                    <div class="js-step s-numered-cols__grid__element">
-                        <span>02.</span>
-                        <h3>디지털 프로덕트 개발</h3>
-                        <p>어쩌구 저쩌구</p>
-                    </div>
-                    <div class="js-step s-numered-cols__grid__element">
-                        <span>03.</span>
-                        <h3>디자인</h3>
-                        <p>어쩌구 저쩌구</p>
-                    </div>
-                </div>
-            </section>
-            <section class="l-container s-ourWork">
-                <h2 class="| heading heading-hidden js-heading st-outline st-scaleHeading transition-2">Our work </h2>
-                <div class="| c-projectBox fade-up js-fade-up papa-johns">
-                    <div class="c-projectBox__heading">
-                        <picture>
-                            <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                            <img class="c-projectBox__heading__logo" width="85" height="17" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="Papa John's Logo">
-                        </picture>
-                        <h3>프로젝트명</h3>
-                        <p>모바일 앱 개발</p>
-                        <a href="papa-johns.html" class="c-btn">
-                            프로젝트 보기 <div class="arrow"></div>
+        </section>
+        <footer class="c-footer">
+            <div class="c-footer__container l-container">
+                <div class="c-footer__row">
+                    <div class="c-footer__brand c-footer__col">
+                        <a class="c-main-logo" href="/">
+                            <img width="56" height="56" src="public/assets/android-chrome-192x192.png" loading="lazy"
+                                alt="Flipside logo">
                         </a>
                     </div>
-                    <div class="c-projectBox__img">
-                        <picture>
-                            <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                            <img width="240" height="495" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="Papa Johns mobile picture">
-                        </picture>
+                    <div class="c-footer__col c-footer__contact">
+                        <span class="c-footer__heading">Contact</span>
+                        <address class="c-footer__address">
+                            서울시 영등포구<br>
+                            버드나루로 60<br>
+                            302호, (경일 빌딩)<br>
+                            <a href="tel:07045788901">070 4578 8901</a>
+                            <br>
+                            <a href="mailto:thkim@youngilvision.com">thkim@youngilvision.com</a>
+                            <br>
+                        </address>
                     </div>
-                </div>
-                <div class="| c-projectBox fade-up hp js-fade-up">
-                    <div class="c-projectBox__heading hp__heading2 hp__space">
-                        <picture>
-                            <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                            <img class="c-projectBox__heading__logo" width="48" height="48" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="HP Logo ">
-                        </picture>
-                        <h3>프로젝트명 2</h3>
-                        <p>웹 사이트 개발</p>
-                        <a href="hp.html" class="c-btn">
-                            프로젝트 보기 <div class="arrow"></div>
-                        </a>
-                    </div>
-                    <div class="c-projectBox__img">
-                        <picture>
-                            <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                            <img width="237" height="453" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="HP mobile app ">
-                        </picture>
-                    </div>
-                    <div class="c-projectBox__img2">
-                        <picture>
-                            <source srcset="public/assets/dummy.png" type="image/png">
-                            <img width="961" height="777" src="public/assets/dummy.png" alt>
-                        </picture>
-                    </div>
-                    <div class="c-projectBox__img--mobile">
-                        <picture>
-                            <source srcset="public/assets/dummy.png.png" type="image/png">
-                            <img width="1208" height="976" src="public/assets/dummy.png" loading="lazy" alt="HP mobile app">
-                        </picture>
-                    </div>
-                </div>
-                <div class="| c-projectBox coca-cola fade-up js-fade-up">
-                    <div class="c-projectBox__heading coca-cola__projectBox__heading">
-                        <picture>
-                            <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                            <img class="c-projectBox__heading__logo" width="88" height="29" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="Coca-Cola logo">
-                        </picture>
-                        <h3>프로젝트명 3</h3>
-                        <p>UI/UX 디자인</p>
-                        <a href="coca-cola.html" class="c-btn">
-                            프로젝트 보기 <div class="arrow"></div>
-                        </a>
-                    </div>
-                    <div class="coca-cola__img">
-                        <picture>
-                            <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                            <img width="600" height="478" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="Coca-cola mobile">
-                        </picture>
-                    </div>
-                </div>
-            </section>
-            <section class="l-container s-cta-grid section-space--240">
-                <div class="| c-cta fade-up js-fade-up s-cta-grid__heading">
-                    <h2>파트너사</h2>
-                    <a href="javascript:void(0)" class="c-btn c-header__contact--cta open-menu-contact">
-                        Work with us <div class="arrow"></div>
-                    </a>
-                </div>
-                <div class="| fade-up2 js-fade-up2 s-cta-grid__grid">
-                    <picture>
-                        <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                        <img class="logo__1" width="103" height="89" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="McDonald's logo">
-                    </picture>
-                    <picture>
-                        <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                        <img class="logo__2" width="103" height="89" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="McDonald's logo">
-                    </picture>
-                    <picture>
-                        <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                        <img class="logo__3" width="103" height="89" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="McDonald's logo">
-                    </picture>
-                    <picture>
-                        <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                        <img class="logo__4" width="103" height="89" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="McDonald's logo">
-                    </picture>
-                    <picture>
-                        <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                        <img class="logo__5" width="103" height="89" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="McDonald's logo">
-                    </picture>
-                    <picture>
-                        <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                        <img class="logo__6" width="103" height="89" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="McDonald's logo">
-                    </picture>
-                    <picture>
-                        <source srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" type="image/png">
-                        <img class="logo__7" width="103" height="89" src="public/assets/dummy.png" srcset="public/assets/dummy.png 2x, public/assets/dummy.png 3x" loading="lazy" alt="McDonald's logo">
-                    </picture>
-                </div>
-            </section>
-            <footer class="c-footer">
-                <div class="c-footer__container l-container">
-                    <div class="c-footer__row">
-                        <div class="c-footer__brand c-footer__col">
-                            <a class="c-main-logo" href="/">
-                                <img width="56" height="56" src="public/assets/android-chrome-192x192.png" loading="lazy" alt="Flipside logo">
-                            </a>
-                        </div>
-                        <div class="c-footer__col c-footer__contact">
-                            <span class="c-footer__heading">Contact</span>
-                            <address class="c-footer__address">
-                                서울시 영등포구<br>
-                                버드나루로 60<br>
-                                302호, (경일 빌딩)<br>
-                                <a href="tel:07045788901">070 4578 8901</a>
-                                <br>
-                                <a href="mailto:thkim@youngilvision.com">thkim@youngilvision.com</a>
-                                <br>
-                            </address>
-                        </div>
-                        <div class="c-footer__col c-footer__services">
-                            <span class="c-footer__heading">RTD Services</span>
-                            <div class="c-footer__services--wrapper">
-                                <ul class="c-footer__list">
-                                    <li>
-                                        <a href="mobile-app-develop.html">모바일 앱 개발</a>
-                                    </li>
-                                    <li>
-                                        <a href="web-develop.html">웹 사이트 개발</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-ux-design.html">UI/UX 디자인</a>
-                                    </li>
-                                    <li>
-                                        <a href="planing-service.html">서비스 기획</a>
-                                    </li>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="c-footer__col c-footer__copyright">
-                            <p>© Copyright Youngilvision 2024</p>
-                            <ul class="c-footer__additional-links">
+                    <div class="c-footer__col c-footer__services">
+                        <span class="c-footer__heading">RTD Services</span>
+                        <div class="c-footer__services--wrapper">
+                            <ul class="c-footer__list">
                                 <li>
-                                    <a target="_blank" href="privacy-policy.html">Privacy Policy</a>
+                                    <a href="mobile-app-develop.html">모바일 앱 개발</a>
                                 </li>
                                 <li>
-                                    <button class="cookie-show-inline">
-                                        <span class="optanon-show-settings-button optanon-toggle-display">Cookie settings </span>
-                                    </button>
+                                    <a href="web-develop.html">웹 사이트 개발</a>
+                                </li>
+                                <li>
+                                    <a href="ui-ux-design.html">UI/UX 디자인</a>
+                                </li>
+                                <li>
+                                    <a href="planing-service.html">서비스 기획</a>
+                                </li>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </main>
-        <script src="src/js/form.js"></script>
-        <script src="src/js/geolocation.js"></script>
-        <script src="src/js/index.js"></script>
-        <script src="src/js/navigation.js"></script>
-        <script src="src/js/swiper.js"></script>
-    </body>
+                <div class="c-footer__col c-footer__copyright">
+                    <p>© Copyright Youngilvision 2024</p>
+                    <ul class="c-footer__additional-links">
+                        <li>
+                            <a target="_blank" href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <button class="cookie-show-inline">
+                                <span class="optanon-show-settings-button optanon-toggle-display">Cookie settings
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </main>
+    <script src="src/js/form.js"></script>
+    <script src="src/js/geolocation.js"></script>
+    <script src="src/js/index.js"></script>
+    <script src="src/js/navigation.js"></script>
+    <script src="src/js/swiper.js"></script>
+</body>
+
 </html>
