@@ -26,7 +26,9 @@
 }
 .heading-hidden {
   @media (max-width: $lg) {
-    display: none;
+    // display: none;
+    // font-size: 3rem;
+
   }
 }
 .big-margin {

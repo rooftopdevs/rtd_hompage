@@ -2,6 +2,14 @@
   overflow: hidden;
   position: relative;
   z-index: 40;
+  h2 {
+    padding-top: rem(110);
+    // margin-bottom: rem(104);
+    @media (max-width: $lg) {
+      padding-top: rem(64);
+      margin-bottom: rem(64);
+    }
+  }
   @media (max-width: $lg) {
     margin-bottom: rem(100);
   }
