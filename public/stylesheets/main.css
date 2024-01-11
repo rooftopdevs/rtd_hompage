@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "SUIT";
   src: url("../../public/assets/fonts/SUIT-Thin.ttf") format("truetype");
@@ -462,7 +463,7 @@ main {
 }
 .st-boldArrow::before {
   content: "";
-  background: url(../img/listArrow.svg) no-repeat center;
+  background: url(../assets/listArrow.svg) no-repeat center;
   background-size: contain;
   min-width: 40px;
   display: block;
@@ -591,7 +592,7 @@ main {
 }
 .st-boldArrow--focus:before {
   content: "";
-  background: url(../img/listArrow.svg) no-repeat center;
+  background: url(../assets/listArrow.svg) no-repeat center;
   background-size: cover;
   width: 40px;
   height: 40px;
@@ -862,7 +863,7 @@ main {
 }
 .nav__wrapper__left {
   width: 100%;
-  max-width: 275px;
+  max-width: 360px;
   font-size: 3rem;
   line-height: 4.4375rem;
 }
@@ -1122,7 +1123,7 @@ main {
 }
 
 .nav__open {
-  transform: translateX(calc(100% - 535px));
+  transform: translateX(calc(100% - 735px));
   transition: 1.2s;
 }
 @media (max-width: 991px) {
@@ -2294,9 +2295,6 @@ main {
   .c-project2Sizes {
     margin-bottom: 6rem;
   }
-}
-.c-project2Sizes:last-child {
-  margin-bottom: 20.625rem;
 }
 @media (max-width: 991px) {
   .c-project2Sizes {
@@ -6325,7 +6323,7 @@ textarea:focus {
   animation-fill-mode: forwards;
 }
 .s-hero h1:not(.video__header)::after {
-  content: "Rooftop Devs.";
+  content: "RTD.";
   position: absolute;
   color: #fff;
   right: 0;
@@ -13114,7 +13112,7 @@ select {
 }
 .js .st-boldUnderline__changeColor:after,
 .js .st-boldUnderline__changeColor2:after {
-  content: "Rooftop Devs.";
+  content: "모바일 앱, 웹, 디지털 프로덕트 개발은 역시 옥탑방 개발자들.";
   position: absolute;
   width: 100%;
   height: 100%;

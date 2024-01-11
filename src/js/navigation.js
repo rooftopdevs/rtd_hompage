@@ -3,9 +3,9 @@
 //data
 const burger = document.querySelector(".c-header__hamburger");
 const navigation = document.querySelector(".nav");
-const liServices = document.querySelector('[data-index="services"]');
+// const liServices = document.querySelector('[data-index="services"]');
 const liContact = document.querySelector('[data-index="contact"]');
-const services = document.querySelector(".nav__services");
+// const services = document.querySelector(".nav__services");
 const wrapperLeft = document.querySelector(".nav__wrapper__left");
 const contact = document.querySelector(".s-contact__header");
 const contactHeader = document.querySelector(".c-header__contact");
@@ -85,23 +85,23 @@ burger.addEventListener("click", () => {
 });
 
 //click services
-liServices.addEventListener("click", openServices);
+// liServices.addEventListener("click", openServices);
 //click contact
 liContact.addEventListener("click", openContact);
 
 //Open Menu Services
 function openServices() {
-  services.classList.add("visible");
+  // services.classList.add("visible");
   outlineElements();
-  liServices.parentElement.classList.remove("st-outline");
-  liServices.classList.add("st-boldArrow--focus");
+  // liServices.parentElement.classList.remove("st-outline");
+  // liServices.classList.add("st-boldArrow--focus");
   liContact.classList.remove("st-boldArrow--focus");
-  services.classList.add("opacity");
+  // services.classList.add("opacity");
   navigation.classList.add("nav__full");
   contact.classList.remove("visible");
   contact.classList.remove("opacity");
   setTimeout(() => {
-    services.classList.add("transformation-mobile");
+    // services.classList.add("transformation-mobile");
   }, 100);
 }
 
@@ -112,12 +112,12 @@ function openContact() {
   navFooter.classList.add("nav__footer--active");
   liContact.parentElement.classList.remove("st-outline");
   liContact.classList.add("st-boldArrow--focus");
-  liServices.classList.remove("st-boldArrow--focus");
+  // liServices.classList.remove("st-boldArrow--focus");
 
   contact.classList.add("opacity");
   navigation.classList.add("nav__full");
-  services.classList.remove("visible");
-  services.classList.remove("opacity");
+  // services.classList.remove("visible");
+  // services.classList.remove("opacity");
   setTimeout(() => {
     contact.classList.add("transformation-mobile");
   }, 100);
@@ -157,16 +157,16 @@ burger.addEventListener("mouseout", () => {
 function closeMenu() {
   burgerAn.classList.remove("c-header__hamburger__lines--open");
   burgerAn.classList.remove("c-header__hamburger__lines--open--hover");
-  liServices.classList.remove("st-boldArrow--focus");
+  // liServices.classList.remove("st-boldArrow--focus");
   liContact.classList.remove("st-boldArrow--focus");
   navFooter.classList.remove("nav__footer--active");
   headingWrapper.classList.remove("c-header__container--active");
   navigation.classList.toggle("nav__open");
   navigation.classList.remove("nav__full");
   contact.classList.remove("nav__full");
-  services.classList.remove("visible");
+  // services.classList.remove("visible");
   contact.classList.remove("visible");
-  services.classList.remove("transformation-mobile");
+  // services.classList.remove("transformation-mobile");
   contact.classList.remove("transformation-mobile");
   body.classList.remove("overflow");
   // closeForm();

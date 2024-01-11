@@ -33,7 +33,7 @@
       }
       &__left {
         width: 100%;
-        max-width: 275px;
+        max-width: 360px;
         font-size: rem(48);
         line-height: rem(71);
         @media (max-width: $lg) {
@@ -270,7 +270,7 @@
   }
   
   .nav__open {
-    transform: translateX(calc(100% - 535px));
+    transform: translateX(calc(100% - 735px));
     transition: 1.2s;
     @media (max-width: $lg) {
       transform: translateX(0);

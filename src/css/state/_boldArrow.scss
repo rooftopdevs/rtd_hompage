@@ -12,7 +12,7 @@
   
     &::before {
       content: "";
-      background: url(../img/listArrow.svg) no-repeat center;
+      background: url(../assets/listArrow.svg) no-repeat center;
       background-size: contain;
       min-width: 40px;
       display: block;
@@ -143,7 +143,7 @@
       padding-left: rem(50);
       &:before {
         content: "";
-        background: url(../img/listArrow.svg) no-repeat center;
+        background: url(../assets/listArrow.svg) no-repeat center;
         background-size: cover;
         width: 40px;
         height: 40px;
